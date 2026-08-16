@@ -1,0 +1,66 @@
+{
+  "id": "quiz-lesson-12",
+  "lessonId": "lesson-12",
+  "title": "Store Data with Blob Storage",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "What is a Shared Access Signature (SAS)?",
+      "options": [
+        { "id": "a", "text": "A permanent master key for the whole storage account" },
+        { "id": "b", "text": "A time-limited, scoped token that grants specific permissions to storage data" },
+        { "id": "c", "text": "A type of blob access tier" },
+        { "id": "d", "text": "A network security group rule" }
+      ],
+      "answer": "b",
+      "explanation": "A SAS is a time-limited, scoped token (usually in a URL) granting specific permissions. A user-delegation SAS, signed with Entra ID credentials, is preferred over key-based SAS."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which are good security practices for Blob storage? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "Prefer Microsoft Entra ID + RBAC for access" },
+        { "id": "b", "text": "Keep SAS tokens narrowly scoped and short-lived" },
+        { "id": "c", "text": "Use a user-delegation SAS instead of an account-key SAS when possible" },
+        { "id": "d", "text": "Embed account keys directly in application code" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "Prefer Entra ID/RBAC; keep SAS scoped and short; prefer user-delegation SAS. Never embed account keys in app code — a leak exposes the whole account."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "Rules that automatically move blobs between tiers or delete them based on age are called ____ management.",
+      "answer": ["lifecycle"],
+      "explanation": "Lifecycle management rules auto-transition blobs between tiers (e.g., to cool/archive) or delete them by age, reducing cost without manual work."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order the steps to share a single blob with a read-only SAS.",
+      "items": [
+        { "id": "perms", "text": "Choose read-only permission" },
+        { "id": "expiry", "text": "Set a short expiry" },
+        { "id": "gen", "text": "Generate the SAS URL" },
+        { "id": "share", "text": "Share the URL" }
+      ],
+      "answer": ["perms", "expiry", "gen", "share"],
+      "explanation": "Scope permissions to read, set a short expiry, generate the SAS, then share the URL — least privilege and minimal exposure."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each authorization method or feature to its description.",
+      "pairs": [
+        { "left": "Account key", "right": "Master key for the whole account (avoid in apps)" },
+        { "left": "SAS", "right": "Time-limited, scoped access token" },
+        { "left": "Entra ID + RBAC", "right": "Most secure, manageable access" },
+        { "left": "Static website", "right": "Serves files from the $web container" }
+      ],
+      "explanation": "Account keys are all-powerful (avoid in apps); SAS is scoped/temporary; Entra ID + RBAC is most secure; static website hosting serves files from $web."
+    }
+  ]
+}

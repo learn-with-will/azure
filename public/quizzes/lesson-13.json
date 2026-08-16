@@ -1,0 +1,66 @@
+{
+  "id": "quiz-lesson-13",
+  "lessonId": "lesson-13",
+  "title": "Relational Data with Azure SQL",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "Which option is a fully managed (PaaS) relational database for new apps?",
+      "options": [
+        { "id": "a", "text": "SQL Server on an Azure VM" },
+        { "id": "b", "text": "Azure SQL Database" },
+        { "id": "c", "text": "Azure Blob storage" },
+        { "id": "d", "text": "Azure Cosmos DB" }
+      ],
+      "answer": "b",
+      "explanation": "Azure SQL Database is a fully managed PaaS relational database (SQL Server engine) where Azure handles patching, backups, and high availability."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which statements about Azure SQL purchasing and options are true? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "vCore lets you size compute and storage independently" },
+        { "id": "b", "text": "The serverless tier can auto-pause when idle" },
+        { "id": "c", "text": "A new SQL server blocks all connections until you add a firewall rule" },
+        { "id": "d", "text": "DTU lets you choose cores and storage completely separately" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "vCore sizes compute and storage separately; serverless can auto-pause; new servers block connections until a firewall rule is added. DTU is a bundled model, not separate sizing."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "The purchasing model Microsoft generally recommends, where you size compute and storage separately, is ____.",
+      "answer": ["vCore", "vcore"],
+      "explanation": "vCore lets you choose compute (cores + memory) and storage independently, supports serverless and Azure Hybrid Benefit, and is generally recommended."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order the steps to create and connect to an Azure SQL database.",
+      "items": [
+        { "id": "server", "text": "Create the logical SQL server" },
+        { "id": "db", "text": "Create the database" },
+        { "id": "fw", "text": "Add a firewall rule for your IP" },
+        { "id": "connect", "text": "Connect and run queries" }
+      ],
+      "answer": ["server", "db", "fw", "connect"],
+      "explanation": "Create the server, then the database, allow your client IP through the firewall, and finally connect and query."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each option to its description.",
+      "pairs": [
+        { "left": "Azure SQL Database", "right": "Fully managed PaaS database for new apps" },
+        { "left": "SQL Managed Instance", "right": "Managed instance with near-full SQL Server compatibility" },
+        { "left": "SQL Server on a VM", "right": "Self-managed database (IaaS)" },
+        { "left": "Serverless tier", "right": "Auto-scales and auto-pauses compute" }
+      ],
+      "explanation": "SQL Database is PaaS; Managed Instance is high-compatibility PaaS; SQL on a VM is IaaS; serverless auto-scales and pauses."
+    }
+  ]
+}

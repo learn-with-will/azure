@@ -1,0 +1,66 @@
+{
+  "id": "quiz-lesson-17",
+  "lessonId": "lesson-17",
+  "title": "Monitoring and Observability",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "Which best describes metrics compared with logs in Azure Monitor?",
+      "options": [
+        { "id": "a", "text": "Metrics are numeric, near-real-time time-series values" },
+        { "id": "b", "text": "Metrics are long text records queried with KQL" },
+        { "id": "c", "text": "Metrics can only be viewed once per day" },
+        { "id": "d", "text": "Metrics are the same thing as alerts" }
+      ],
+      "answer": "a",
+      "explanation": "Metrics are lightweight, numeric, near-real-time time-series values (great for dashboards and quick alerts). Logs are richer, structured records stored in Log Analytics and queried with KQL."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which statements about Azure Monitor are true? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "Application Insights provides application performance monitoring" },
+        { "id": "b", "text": "Logs are stored in a Log Analytics workspace and queried with KQL" },
+        { "id": "c", "text": "An alert rule can use an action group to notify or automate a response" },
+        { "id": "d", "text": "Creating many noisy, low-value alerts is a best practice" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "App Insights is APM; logs live in Log Analytics (KQL); alerts trigger action groups. Over-alerting causes alert fatigue — alert only on actionable conditions."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "The query language used to analyze logs in a Log Analytics workspace is abbreviated ____.",
+      "answer": ["KQL", "Kusto Query Language"],
+      "explanation": "KQL (Kusto Query Language) is a pipe-based language used to query logs, power log-based alerts, and build workbooks."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order what happens when a monitored condition is breached.",
+      "items": [
+        { "id": "signal", "text": "A signal crosses the alert condition" },
+        { "id": "fire", "text": "The alert rule fires" },
+        { "id": "action", "text": "The action group runs" },
+        { "id": "respond", "text": "People are notified or a response is automated" }
+      ],
+      "answer": ["signal", "fire", "action", "respond"],
+      "explanation": "A signal breaches the condition, the alert rule fires, its action group runs, and it notifies people or automates a response."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each monitoring concept to its meaning.",
+      "pairs": [
+        { "left": "Azure Monitor", "right": "The umbrella platform for telemetry and alerting" },
+        { "left": "Metric", "right": "A numeric, near-real-time time-series value" },
+        { "left": "Log Analytics", "right": "Where logs are stored and queried with KQL" },
+        { "left": "Application Insights", "right": "Application performance monitoring" }
+      ],
+      "explanation": "Azure Monitor is the umbrella; metrics are numeric; Log Analytics stores logs (KQL); App Insights is APM."
+    }
+  ]
+}

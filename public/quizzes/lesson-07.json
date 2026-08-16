@@ -1,0 +1,66 @@
+{
+  "id": "quiz-lesson-07",
+  "lessonId": "lesson-07",
+  "title": "Core Networking Overview",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "What is an Azure virtual network (VNet)?",
+      "options": [
+        { "id": "a", "text": "A private, isolated network in an Azure region where resources get private IPs" },
+        { "id": "b", "text": "A managed database service" },
+        { "id": "c", "text": "A public DNS provider only" },
+        { "id": "d", "text": "A billing boundary for resources" }
+      ],
+      "answer": "a",
+      "explanation": "A VNet is your own private, isolated network in a region, divided into subnets, where resources get private IP addresses and communicate."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which are valid load-balancing services in Azure? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "Azure Load Balancer (regional, layer 4)" },
+        { "id": "b", "text": "Application Gateway (regional, layer 7)" },
+        { "id": "c", "text": "Azure Front Door (global, layer 7)" },
+        { "id": "d", "text": "Azure Key Vault" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "Load Balancer (L4), Application Gateway (regional L7), and Front Door (global L7) distribute traffic. Key Vault is a secrets store, not a load balancer."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "Allow/deny rules that filter traffic by IP, port, and protocol are configured in a ____ security group.",
+      "answer": ["network", "NSG"],
+      "explanation": "A network security group (NSG) filters traffic with allow/deny rules by source/destination IP, port, and protocol, attached to a subnet or NIC."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order the path of an inbound request to a web VM from OUTERMOST to the VM.",
+      "items": [
+        { "id": "net", "text": "The internet" },
+        { "id": "lb", "text": "Load balancer" },
+        { "id": "nsg", "text": "Network security group" },
+        { "id": "vm", "text": "The VM" }
+      ],
+      "answer": ["net", "lb", "nsg", "vm"],
+      "explanation": "Traffic comes from the internet, is distributed by a load balancer, filtered by the NSG, and then reaches the VM."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each connectivity option to its description.",
+      "pairs": [
+        { "left": "VPN Gateway", "right": "Encrypted tunnel over the public internet" },
+        { "left": "ExpressRoute", "right": "Private, dedicated connection (not over the internet)" },
+        { "left": "Front Door", "right": "Global layer-7 routing with CDN and WAF" },
+        { "left": "Azure DNS", "right": "Hosts DNS domains and resolves names" }
+      ],
+      "explanation": "VPN Gateway is an internet tunnel; ExpressRoute is a private link; Front Door is global L7; Azure DNS hosts your domains."
+    }
+  ]
+}

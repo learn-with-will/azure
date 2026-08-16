@@ -1,0 +1,66 @@
+{
+  "id": "quiz-lesson-23",
+  "lessonId": "lesson-23",
+  "title": "Reliability and Scaling",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "How does the composite SLA of two services that depend on each other in series compare with each service alone?",
+      "options": [
+        { "id": "a", "text": "It is higher than either service" },
+        { "id": "b", "text": "It is lower, because the SLAs multiply together" },
+        { "id": "c", "text": "It is exactly the same as each service" },
+        { "id": "d", "text": "SLAs cannot be combined at all" }
+      ],
+      "answer": "b",
+      "explanation": "In series, SLAs multiply into a lower composite (e.g., 99.9% × 99.9% ≈ 99.8%). Parallel redundancy is what raises effective availability."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which statements about reliability and scaling are true? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "Availability zones protect against a whole-datacenter outage" },
+        { "id": "b", "text": "Scaling out adds more instances behind a load balancer" },
+        { "id": "c", "text": "Autoscale can add/remove instances based on metrics or a schedule" },
+        { "id": "d", "text": "Scaling up has no practical upper limit" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "Zones protect against datacenter outages; scaling out adds instances; autoscale reacts to metrics/schedules. Scaling up has a ceiling — scale out for elasticity and resilience."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "The measure of how much data loss you can tolerate (how far back your last good copy is) is abbreviated ____.",
+      "answer": ["RPO", "recovery point objective"],
+      "explanation": "RPO (Recovery Point Objective) is tolerable data loss; RTO (Recovery Time Objective) is tolerable downtime. Design backup/DR to meet both."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order these from LEAST to MOST resilient.",
+      "items": [
+        { "id": "single", "text": "Single instance" },
+        { "id": "set", "text": "Availability set (within a datacenter)" },
+        { "id": "zones", "text": "Across availability zones" },
+        { "id": "region", "text": "Across multiple regions" }
+      ],
+      "answer": ["single", "set", "zones", "region"],
+      "explanation": "Resilience grows from a single instance, to an availability set (rack/maintenance protection), to zones (datacenter outage), to multiple regions (regional disaster)."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each reliability concept to its meaning.",
+      "pairs": [
+        { "left": "SLA", "right": "The provider's uptime commitment for a service" },
+        { "left": "Availability set", "right": "VMs spread across fault/update domains in one datacenter" },
+        { "left": "Availability zone", "right": "VMs spread across separate datacenters in a region" },
+        { "left": "RTO", "right": "How quickly you must be back online" }
+      ],
+      "explanation": "An SLA is the uptime commitment; availability sets protect within a datacenter; zones protect across datacenters; RTO is tolerable downtime."
+    }
+  ]
+}

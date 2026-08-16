@@ -1,0 +1,410 @@
+[
+  {
+    "id": "lesson-01",
+    "slug": "what-is-cloud-computing",
+    "title": "What Is Cloud Computing?",
+    "level": "beginner",
+    "order": 1,
+    "duration": 16,
+    "file": "beginner/what-is-cloud-computing.md",
+    "summary": "What the cloud actually is — renting computing over the internet, the IaaS/PaaS/SaaS service models and the shared responsibility that comes with each, public/private/hybrid deployment, the shift from CapEx to OpEx, and the real benefits like elasticity and global reach.",
+    "tags": [
+      "cloud",
+      "iaas",
+      "paas",
+      "saas",
+      "fundamentals"
+    ]
+  },
+  {
+    "id": "lesson-02",
+    "slug": "what-is-azure-and-getting-started",
+    "title": "What Is Azure and Getting Started",
+    "level": "beginner",
+    "order": 2,
+    "duration": 18,
+    "file": "beginner/what-is-azure-and-getting-started.md",
+    "summary": "What Microsoft Azure is and how you actually work with it — the account/subscription model, the four main ways to interact (portal, Azure CLI, Azure PowerShell, and Cloud Shell), signing in, and creating your very first resource group.",
+    "tags": [
+      "azure",
+      "portal",
+      "azure-cli",
+      "subscription",
+      "cloud-shell"
+    ]
+  },
+  {
+    "id": "lesson-03",
+    "slug": "azure-global-infrastructure",
+    "title": "Azure Global Infrastructure",
+    "level": "beginner",
+    "order": 3,
+    "duration": 17,
+    "file": "beginner/azure-global-infrastructure.md",
+    "summary": "How Azure is laid out across the planet — datacenters grouped into regions, availability zones for in-region resilience, region pairs and geographies for disaster recovery and data residency, and the practical factors that decide which region you pick.",
+    "tags": [
+      "regions",
+      "availability-zones",
+      "region-pairs",
+      "geography",
+      "resilience"
+    ]
+  },
+  {
+    "id": "lesson-04",
+    "slug": "resource-management-and-arm",
+    "title": "Resource Management and ARM",
+    "level": "beginner",
+    "order": 4,
+    "duration": 18,
+    "file": "beginner/resource-management-and-arm.md",
+    "summary": "How Azure organizes and manages everything you create — the management-group / subscription / resource-group / resource hierarchy, the Azure Resource Manager control plane that every request goes through, and tags for organizing and tracking cost.",
+    "tags": [
+      "resource-groups",
+      "arm",
+      "management-groups",
+      "tags",
+      "governance"
+    ]
+  },
+  {
+    "id": "lesson-05",
+    "slug": "core-compute-overview",
+    "title": "Core Compute Overview",
+    "level": "beginner",
+    "order": 5,
+    "duration": 18,
+    "file": "beginner/core-compute-overview.md",
+    "summary": "A map of Azure's main ways to run code — virtual machines and scale sets (IaaS), App Service (PaaS web hosting), Azure Functions (serverless), and containers (ACI, Container Apps, AKS) — and a simple way to pick the right one for a workload.",
+    "tags": [
+      "compute",
+      "virtual-machines",
+      "app-service",
+      "functions",
+      "containers"
+    ]
+  },
+  {
+    "id": "lesson-06",
+    "slug": "core-storage-overview",
+    "title": "Core Storage Overview",
+    "level": "beginner",
+    "order": 6,
+    "duration": 18,
+    "file": "beginner/core-storage-overview.md",
+    "summary": "Azure's core storage building blocks — the storage account and its Blob, File, Queue, and Table services (plus managed disks for VMs), the hot/cool/cold/archive access tiers for blobs, and the LRS/ZRS/GRS/GZRS redundancy options that decide how many copies of your data exist and where.",
+    "tags": [
+      "storage",
+      "blob",
+      "files",
+      "redundancy",
+      "access-tiers"
+    ]
+  },
+  {
+    "id": "lesson-07",
+    "slug": "core-networking-overview",
+    "title": "Core Networking Overview",
+    "level": "beginner",
+    "order": 7,
+    "duration": 18,
+    "file": "beginner/core-networking-overview.md",
+    "summary": "The building blocks of networking in Azure — virtual networks and subnets, network security groups for traffic rules, ways to connect to on-premises (VPN and ExpressRoute), the load-balancing options (Load Balancer, Application Gateway, Front Door, Traffic Manager), and Azure DNS.",
+    "tags": [
+      "networking",
+      "virtual-network",
+      "nsg",
+      "load-balancing",
+      "connectivity"
+    ]
+  },
+  {
+    "id": "lesson-08",
+    "slug": "identity-and-access",
+    "title": "Identity and Access",
+    "level": "beginner",
+    "order": 8,
+    "duration": 18,
+    "file": "beginner/identity-and-access.md",
+    "summary": "How Azure knows who you are and what you may do — Microsoft Entra ID (formerly Azure AD) as the cloud identity service, authentication versus authorization, Azure role-based access control (RBAC) with scopes and built-in roles, and stronger sign-in with MFA and Conditional Access.",
+    "tags": [
+      "entra-id",
+      "rbac",
+      "authentication",
+      "authorization",
+      "mfa"
+    ]
+  },
+  {
+    "id": "lesson-09",
+    "slug": "deploy-a-virtual-machine",
+    "title": "Deploy a Virtual Machine",
+    "level": "intermediate",
+    "order": 9,
+    "duration": 20,
+    "file": "intermediate/deploy-a-virtual-machine.md",
+    "summary": "Hands-on with Azure Virtual Machines — creating a Linux VM with the Azure CLI, understanding images, sizes, and managed disks, connecting over SSH, controlling inbound traffic, and (crucially) deallocating and deleting to stop the meter.",
+    "tags": [
+      "virtual-machines",
+      "compute",
+      "ssh",
+      "disks",
+      "cost"
+    ]
+  },
+  {
+    "id": "lesson-10",
+    "slug": "host-web-apps-with-app-service",
+    "title": "Host Web Apps with App Service",
+    "level": "intermediate",
+    "order": 10,
+    "duration": 20,
+    "file": "intermediate/host-web-apps-with-app-service.md",
+    "summary": "Deploy a web app or API on Azure App Service — the App Service plan that provides the compute, deploying code with the CLI, scaling up versus out, zero-downtime releases with deployment slots, and adding a custom domain with free managed TLS.",
+    "tags": [
+      "app-service",
+      "paas",
+      "deployment-slots",
+      "scaling",
+      "tls"
+    ]
+  },
+  {
+    "id": "lesson-11",
+    "slug": "serverless-with-azure-functions",
+    "title": "Serverless with Azure Functions",
+    "level": "intermediate",
+    "order": 11,
+    "duration": 20,
+    "file": "intermediate/serverless-with-azure-functions.md",
+    "summary": "Build event-driven serverless code with Azure Functions — how triggers start a function and bindings connect it to data, the hosting plans (Consumption scales to zero but can cold-start; Premium keeps instances warm), what serverless is good and bad at, and creating a function app with the CLI.",
+    "tags": [
+      "functions",
+      "serverless",
+      "triggers",
+      "bindings",
+      "consumption"
+    ]
+  },
+  {
+    "id": "lesson-12",
+    "slug": "store-data-with-blob-storage",
+    "title": "Store Data with Blob Storage",
+    "level": "intermediate",
+    "order": 12,
+    "duration": 20,
+    "file": "intermediate/store-data-with-blob-storage.md",
+    "summary": "Work hands-on with Azure Blob storage — containers and blobs, uploading and downloading with the CLI, granting time-limited access with SAS tokens, automating tier changes and cleanup with lifecycle rules, hosting a static website, and preferring Entra ID over account keys.",
+    "tags": [
+      "blob-storage",
+      "sas",
+      "lifecycle",
+      "static-website",
+      "security"
+    ]
+  },
+  {
+    "id": "lesson-13",
+    "slug": "relational-data-with-azure-sql",
+    "title": "Relational Data with Azure SQL",
+    "level": "intermediate",
+    "order": 13,
+    "duration": 20,
+    "file": "intermediate/relational-data-with-azure-sql.md",
+    "summary": "Run relational databases on Azure — the difference between Azure SQL Database (PaaS), SQL Managed Instance, and SQL Server on a VM, the DTU vs vCore purchasing models (including serverless), configuring the firewall, and connecting to run queries, with backups handled for you.",
+    "tags": [
+      "azure-sql",
+      "paas",
+      "database",
+      "vcore",
+      "firewall"
+    ]
+  },
+  {
+    "id": "lesson-14",
+    "slug": "nosql-with-cosmos-db",
+    "title": "NoSQL with Cosmos DB",
+    "level": "intermediate",
+    "order": 14,
+    "duration": 20,
+    "file": "intermediate/nosql-with-cosmos-db.md",
+    "summary": "Azure Cosmos DB, the globally distributed NoSQL database — its multiple APIs, how throughput is measured and billed in Request Units, why the partition key is the most important design choice, the five consistency levels, and turnkey global distribution.",
+    "tags": [
+      "cosmos-db",
+      "nosql",
+      "partitioning",
+      "consistency",
+      "request-units"
+    ]
+  },
+  {
+    "id": "lesson-15",
+    "slug": "networking-hands-on",
+    "title": "Networking Hands-On",
+    "level": "intermediate",
+    "order": 15,
+    "duration": 20,
+    "file": "intermediate/networking-hands-on.md",
+    "summary": "Build a network from the ground up — a virtual network with subnets, a network security group, a VM placed inside it, connecting networks with VNet peering, and reaching PaaS services privately with private endpoints instead of over the public internet.",
+    "tags": [
+      "virtual-network",
+      "subnets",
+      "peering",
+      "private-endpoint",
+      "nsg"
+    ]
+  },
+  {
+    "id": "lesson-16",
+    "slug": "secrets-and-configuration-with-key-vault",
+    "title": "Secrets and Configuration with Key Vault",
+    "level": "intermediate",
+    "order": 16,
+    "duration": 19,
+    "file": "intermediate/secrets-and-configuration-with-key-vault.md",
+    "summary": "Keep credentials out of your code — store secrets, keys, and certificates in Azure Key Vault, let apps authenticate with managed identities instead of stored passwords, reference secrets from App Service and Functions, and centralize non-secret settings with App Configuration.",
+    "tags": [
+      "key-vault",
+      "managed-identity",
+      "secrets",
+      "app-configuration",
+      "security"
+    ]
+  },
+  {
+    "id": "lesson-17",
+    "slug": "monitoring-and-observability",
+    "title": "Monitoring and Observability",
+    "level": "advanced",
+    "order": 17,
+    "duration": 20,
+    "file": "advanced/monitoring-and-observability.md",
+    "summary": "See what your systems are doing — Azure Monitor as the umbrella for metrics and logs, Log Analytics workspaces queried with KQL, Application Insights for application performance, and alerts with action groups that notify or automate a response.",
+    "tags": [
+      "azure-monitor",
+      "log-analytics",
+      "application-insights",
+      "alerts",
+      "kql"
+    ]
+  },
+  {
+    "id": "lesson-18",
+    "slug": "containers-on-azure",
+    "title": "Containers on Azure",
+    "level": "advanced",
+    "order": 18,
+    "duration": 20,
+    "file": "advanced/containers-on-azure.md",
+    "summary": "Run containers on Azure — building and storing images in Azure Container Registry, then choosing where they run: Container Instances for single containers, Container Apps for serverless microservices, or Azure Kubernetes Service for full Kubernetes control.",
+    "tags": [
+      "containers",
+      "container-registry",
+      "container-apps",
+      "aks",
+      "aci"
+    ]
+  },
+  {
+    "id": "lesson-19",
+    "slug": "infrastructure-as-code-with-bicep",
+    "title": "Infrastructure as Code with Bicep",
+    "level": "advanced",
+    "order": 19,
+    "duration": 20,
+    "file": "advanced/infrastructure-as-code-with-bicep.md",
+    "summary": "Define your Azure infrastructure in code — why infrastructure as code matters, how ARM templates and the friendlier Bicep language relate, writing and deploying a Bicep file, using parameters for reuse, and previewing changes safely with what-if because deployments are declarative and idempotent.",
+    "tags": [
+      "bicep",
+      "iac",
+      "arm",
+      "deployment",
+      "idempotency"
+    ]
+  },
+  {
+    "id": "lesson-20",
+    "slug": "cicd-to-azure",
+    "title": "CI/CD to Azure",
+    "level": "advanced",
+    "order": 20,
+    "duration": 20,
+    "file": "advanced/cicd-to-azure.md",
+    "summary": "Automate build, test, and deploy to Azure — what CI/CD means, the two main tools (GitHub Actions and Azure Pipelines), authenticating to Azure securely with OIDC/workload identity federation instead of stored secrets, and a workflow that deploys an app on every push.",
+    "tags": [
+      "cicd",
+      "github-actions",
+      "azure-pipelines",
+      "oidc",
+      "deployment"
+    ]
+  },
+  {
+    "id": "lesson-21",
+    "slug": "cost-management-and-governance",
+    "title": "Cost Management and Governance",
+    "level": "advanced",
+    "order": 21,
+    "duration": 20,
+    "file": "advanced/cost-management-and-governance.md",
+    "summary": "Keep spending and sprawl under control — estimate with the pricing and TCO calculators, track and forecast real spend with Cost Management and budgets, save with reservations and right-sizing, and enforce the rules with Azure Policy, resource locks, tags, and management groups.",
+    "tags": [
+      "cost-management",
+      "azure-policy",
+      "budgets",
+      "locks",
+      "governance"
+    ]
+  },
+  {
+    "id": "lesson-22",
+    "slug": "security-in-azure",
+    "title": "Security in Azure",
+    "level": "advanced",
+    "order": 22,
+    "duration": 20,
+    "file": "advanced/security-in-azure.md",
+    "summary": "A tour of Azure security — defense in depth and Zero Trust, Microsoft Defender for Cloud with its secure score, Microsoft Sentinel for SIEM/SOAR, encryption at rest and in transit, and the identity and network controls that tie it all together.",
+    "tags": [
+      "defender-for-cloud",
+      "zero-trust",
+      "encryption",
+      "sentinel",
+      "security"
+    ]
+  },
+  {
+    "id": "lesson-23",
+    "slug": "reliability-and-scaling",
+    "title": "Reliability and Scaling",
+    "level": "advanced",
+    "order": 23,
+    "duration": 20,
+    "file": "advanced/reliability-and-scaling.md",
+    "summary": "Design systems that stay up and keep up — how SLAs and composite SLAs work, availability sets versus availability zones, scaling up versus out with autoscale, and protecting data and continuity with backup and disaster recovery (RTO/RPO).",
+    "tags": [
+      "reliability",
+      "sla",
+      "autoscale",
+      "high-availability",
+      "disaster-recovery"
+    ]
+  },
+  {
+    "id": "lesson-24",
+    "slug": "well-architected-and-capstone",
+    "title": "Well-Architected and Capstone",
+    "level": "advanced",
+    "order": 24,
+    "duration": 22,
+    "file": "advanced/well-architected-and-capstone.md",
+    "summary": "Bring it all together — the five pillars of the Azure Well-Architected Framework and where the Cloud Adoption Framework fits, then a capstone that designs a small, real solution end to end using the compute, storage, data, identity, security, and automation services from this course.",
+    "tags": [
+      "well-architected",
+      "cloud-adoption-framework",
+      "architecture",
+      "capstone",
+      "best-practices"
+    ]
+  }
+]

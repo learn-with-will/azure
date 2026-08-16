@@ -1,0 +1,65 @@
+{
+  "id": "quiz-lesson-05",
+  "lessonId": "lesson-05",
+  "title": "Core Compute Overview",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "Which service is the fully managed (PaaS) way to host a web app or API?",
+      "options": [
+        { "id": "a", "text": "Azure Virtual Machine" },
+        { "id": "b", "text": "Azure App Service" },
+        { "id": "c", "text": "Azure Kubernetes Service" },
+        { "id": "d", "text": "Azure Storage" }
+      ],
+      "answer": "b",
+      "explanation": "App Service is PaaS web hosting: you deploy code or a container and Azure runs, patches, and scales the platform for you."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which statements about Azure compute are true? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "A Virtual Machine (IaaS) gives the most control but you maintain the OS" },
+        { "id": "b", "text": "Azure Functions can scale to zero and bill per execution" },
+        { "id": "c", "text": "AKS is managed Kubernetes for complex orchestration" },
+        { "id": "d", "text": "App Service requires you to patch the operating system yourself" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "VMs give control with OS upkeep; Functions scale to zero and bill per run; AKS is managed Kubernetes. App Service is PaaS — Azure patches the OS, not you."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "The serverless, event-driven Azure compute service that runs small pieces of code is Azure ____.",
+      "answer": ["Functions", "function"],
+      "explanation": "Azure Functions runs event-driven code (HTTP, timer, queue, blob triggers) and, on the Consumption plan, scales to zero and bills per execution."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order these from the MOST infrastructure you manage to the LEAST.",
+      "items": [
+        { "id": "vm", "text": "Virtual Machine" },
+        { "id": "app", "text": "App Service" },
+        { "id": "fn", "text": "Azure Functions" }
+      ],
+      "answer": ["vm", "app", "fn"],
+      "explanation": "A VM (IaaS) has you manage the OS and up; App Service (PaaS) manages the platform; Functions (serverless) has you supply only code."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each compute service to its description.",
+      "pairs": [
+        { "left": "Virtual Machine", "right": "IaaS computer where you manage the OS" },
+        { "left": "App Service", "right": "Managed hosting for web apps and APIs" },
+        { "left": "Azure Functions", "right": "Serverless, event-driven code" },
+        { "left": "AKS", "right": "Managed Kubernetes for containers" }
+      ],
+      "explanation": "VM = IaaS; App Service = PaaS web hosting; Functions = serverless; AKS = managed Kubernetes."
+    }
+  ]
+}

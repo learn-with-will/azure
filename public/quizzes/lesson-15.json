@@ -1,0 +1,66 @@
+{
+  "id": "quiz-lesson-15",
+  "lessonId": "lesson-15",
+  "title": "Networking Hands-On",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "What does a private endpoint do?",
+      "options": [
+        { "id": "a", "text": "Gives a PaaS service a private IP inside your VNet so traffic avoids the public internet" },
+        { "id": "b", "text": "Makes a storage account public to everyone" },
+        { "id": "c", "text": "Encrypts a virtual machine's disk" },
+        { "id": "d", "text": "Assigns a role to a user" }
+      ],
+      "answer": "a",
+      "explanation": "A private endpoint is a network interface with a private IP in your VNet that connects privately (via Private Link) to a PaaS service, keeping traffic off the public internet."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which statements about VNet peering are true? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "It connects two VNets so resources communicate over private IPs" },
+        { "id": "b", "text": "Peered VNets must have non-overlapping address spaces" },
+        { "id": "c", "text": "Peering is non-transitive (A-B and B-C does not connect A and C)" },
+        { "id": "d", "text": "Peering only needs to be created on one of the two VNets" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "Peering privately connects VNets, requires non-overlapping ranges, and is non-transitive. It must be created on both VNets to work."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "VNet peering is non-____, meaning peering A-B and B-C does not automatically connect A and C.",
+      "answer": ["transitive"],
+      "explanation": "Peering is non-transitive; you must connect A and C directly or use a hub-and-spoke design with routing."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order the steps to build and secure a subnet.",
+      "items": [
+        { "id": "vnet", "text": "Create the VNet" },
+        { "id": "subnet", "text": "Add a subnet" },
+        { "id": "nsg", "text": "Create a network security group" },
+        { "id": "assoc", "text": "Associate the NSG with the subnet" }
+      ],
+      "answer": ["vnet", "subnet", "nsg", "assoc"],
+      "explanation": "Create the VNet, carve a subnet, create an NSG with rules, then associate the NSG with the subnet."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each networking concept to its meaning.",
+      "pairs": [
+        { "left": "Address space", "right": "The private IP range a VNet owns" },
+        { "left": "Subnet", "right": "A subdivision of a VNet grouping resources" },
+        { "left": "Peering", "right": "Private connectivity between two VNets" },
+        { "left": "Private endpoint", "right": "A private IP in your VNet for a PaaS service" }
+      ],
+      "explanation": "Address space is the VNet's IP range; subnets subdivide it; peering connects VNets; private endpoints give PaaS a private IP."
+    }
+  ]
+}

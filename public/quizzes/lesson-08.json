@@ -1,0 +1,65 @@
+{
+  "id": "quiz-lesson-08",
+  "lessonId": "lesson-08",
+  "title": "Identity and Access",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "Which describes authentication (as opposed to authorization)?",
+      "options": [
+        { "id": "a", "text": "Deciding what actions an identity is allowed to perform" },
+        { "id": "b", "text": "Proving who you are, usually by signing in" },
+        { "id": "c", "text": "Billing your usage to a subscription" },
+        { "id": "d", "text": "Encrypting data at rest" }
+      ],
+      "answer": "b",
+      "explanation": "Authentication answers 'who are you?' (proving identity by signing in). Authorization answers 'what may you do?' — that's RBAC."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which statements about Microsoft Entra ID and RBAC are true? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "Microsoft Entra ID is the current name for Azure Active Directory" },
+        { "id": "b", "text": "An RBAC role assignment combines a principal, a role, and a scope" },
+        { "id": "c", "text": "Role assignments inherit downward through the hierarchy" },
+        { "id": "d", "text": "Entra ID is identical to on-premises Active Directory Domain Services" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "Entra ID is the renamed Azure AD; RBAC = principal + role + scope, inheriting downward. Entra ID is NOT the same as on-premises AD DS (no OUs/Group Policy/domain join)."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "Requiring two or more proofs of identity at sign-in (like a password plus a phone app) is abbreviated ____.",
+      "answer": ["MFA", "multifactor authentication", "multi-factor authentication"],
+      "explanation": "MFA (multifactor authentication) requires two or more verification factors and blocks the vast majority of password-based attacks."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order these built-in roles from LEAST to MOST access.",
+      "items": [
+        { "id": "reader", "text": "Reader" },
+        { "id": "contributor", "text": "Contributor" },
+        { "id": "owner", "text": "Owner" }
+      ],
+      "answer": ["reader", "contributor", "owner"],
+      "explanation": "Reader can only view; Contributor can manage resources but not grant access; Owner has full access including managing others' access."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each term to its meaning.",
+      "pairs": [
+        { "left": "Owner", "right": "Full access including managing others' access" },
+        { "left": "Contributor", "right": "Manage resources but not grant access to others" },
+        { "left": "Reader", "right": "View resources only" },
+        { "left": "Least privilege", "right": "Grant only the minimum access needed" }
+      ],
+      "explanation": "Owner is full control; Contributor manages resources but not access; Reader is view-only; least privilege grants the minimum necessary."
+    }
+  ]
+}

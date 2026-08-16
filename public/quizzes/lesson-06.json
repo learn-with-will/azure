@@ -1,0 +1,66 @@
+{
+  "id": "quiz-lesson-06",
+  "lessonId": "lesson-06",
+  "title": "Core Storage Overview",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "Which storage service is best for unstructured objects like images, backups, and logs?",
+      "options": [
+        { "id": "a", "text": "Blob storage" },
+        { "id": "b", "text": "Azure Files" },
+        { "id": "c", "text": "Queue storage" },
+        { "id": "d", "text": "Table storage" }
+      ],
+      "answer": "a",
+      "explanation": "Blob storage is object storage for unstructured data (files, images, video, backups, logs) accessed over HTTP/APIs."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which statements about storage redundancy are true? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "LRS keeps three copies within a single datacenter" },
+        { "id": "b", "text": "ZRS spreads copies across availability zones in a region" },
+        { "id": "c", "text": "GRS also copies data asynchronously to a secondary region" },
+        { "id": "d", "text": "LRS protects against a full regional outage" }
+      ],
+      "answer": ["a", "b", "c"],
+      "explanation": "LRS = 3 copies in one datacenter; ZRS = across zones; GRS = plus a secondary region. LRS does NOT protect against a regional outage — you need geo-redundant options for that."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "The offline, lowest-cost blob access tier (which must be rehydrated before reading) is the ____ tier.",
+      "answer": ["archive", "Archive"],
+      "explanation": "The Archive tier is offline and cheapest to store; you must rehydrate a blob (which takes time) before you can read it."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order these redundancy options from LEAST resilient to MOST resilient.",
+      "items": [
+        { "id": "lrs", "text": "LRS" },
+        { "id": "zrs", "text": "ZRS" },
+        { "id": "grs", "text": "GRS" },
+        { "id": "gzrs", "text": "GZRS" }
+      ],
+      "answer": ["lrs", "zrs", "grs", "gzrs"],
+      "explanation": "LRS (one datacenter) < ZRS (zones in a region) < GRS (local + secondary region) < GZRS (zonal + secondary region, most resilient)."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each storage service to what it provides.",
+      "pairs": [
+        { "left": "Blob storage", "right": "Object storage for unstructured data" },
+        { "left": "Azure Files", "right": "Managed SMB/NFS file shares" },
+        { "left": "Queue storage", "right": "A simple message queue" },
+        { "left": "Table storage", "right": "NoSQL key/value store" }
+      ],
+      "explanation": "A storage account provides Blob (objects), Files (shares), Queue (messages), and Table (NoSQL key/value)."
+    }
+  ]
+}

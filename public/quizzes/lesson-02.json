@@ -1,0 +1,66 @@
+{
+  "id": "quiz-lesson-02",
+  "lessonId": "lesson-02",
+  "title": "What Is Azure and Getting Started",
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single-choice",
+      "prompt": "What is an Azure subscription?",
+      "options": [
+        { "id": "a", "text": "A programming language used in Azure" },
+        { "id": "b", "text": "A billing and management boundary that resources are created inside" },
+        { "id": "c", "text": "A single virtual machine" },
+        { "id": "d", "text": "The web GUI for managing Azure" }
+      ],
+      "answer": "b",
+      "explanation": "A subscription is a billing and management boundary. Resources are created inside it and their usage is billed to it; you can have several (e.g., dev and production)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Which of these are ways to interact with Azure? Select all that apply.",
+      "options": [
+        { "id": "a", "text": "The Azure portal (web GUI)" },
+        { "id": "b", "text": "The Azure CLI (az)" },
+        { "id": "c", "text": "Azure PowerShell (Az module)" },
+        { "id": "d", "text": "Cloud Shell" }
+      ],
+      "answer": ["a", "b", "c", "d"],
+      "explanation": "All four are valid ways to work with Azure. They ultimately call the same Azure REST API."
+    },
+    {
+      "id": "q3",
+      "type": "fill-blank",
+      "prompt": "The Azure CLI command that signs you in is `az ____`.",
+      "answer": ["login"],
+      "explanation": "`az login` opens a browser to authenticate; then `az account show` displays your active subscription."
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Order the Azure hierarchy from broadest to most specific.",
+      "items": [
+        { "id": "acct", "text": "Account" },
+        { "id": "sub", "text": "Subscription" },
+        { "id": "rg", "text": "Resource group" },
+        { "id": "res", "text": "Resource" }
+      ],
+      "answer": ["acct", "sub", "rg", "res"],
+      "explanation": "Identity and billing flow account → subscription → resource group → resource."
+    },
+    {
+      "id": "q5",
+      "type": "match-pair",
+      "prompt": "Match each tool or term to what it is.",
+      "pairs": [
+        { "left": "Azure portal", "right": "Web GUI for exploring and managing Azure" },
+        { "left": "Azure CLI", "right": "Command-line tool whose commands start with az" },
+        { "left": "Cloud Shell", "right": "A signed-in shell built into the browser" },
+        { "left": "Tenant", "right": "Your organization's directory of users and groups" }
+      ],
+      "explanation": "The portal is the GUI; the CLI is command-line (az); Cloud Shell is a ready-to-use browser shell; a tenant is your Microsoft Entra directory."
+    }
+  ]
+}
