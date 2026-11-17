@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cloud-fundamentals",
+    "title": "Cloud Computing Fundamentals",
+    "blurb": "Core cloud concepts, service models (IaaS, PaaS, SaaS), shared responsibility, deployment types, and economic models.",
+    "order": 1
+  },
+  {
+    "id": "azure-architecture-and-governance",
+    "title": "Azure Architecture and Resource Management",
+    "blurb": "Global infrastructure, regions, availability zones, management hierarchy, Azure Resource Manager (ARM), and resource tagging.",
+    "order": 2
+  },
+  {
+    "id": "virtual-machines-and-compute",
+    "title": "Virtual Machines and Compute",
+    "blurb": "Azure compute decision matrix, Linux and Windows VMs, sizing, managed disks, SSH/Bastion connectivity, and VM scale sets.",
+    "order": 3
+  },
+  {
+    "id": "app-service-and-serverless",
+    "title": "App Service and Serverless Functions",
+    "blurb": "Hosting web apps and APIs on App Service, deployment slots, custom domains, and event-driven Azure Functions.",
+    "order": 4
+  },
+  {
+    "id": "storage-and-blob",
+    "title": "Storage Accounts and Blob Storage",
+    "blurb": "Storage account types, redundancy options (LRS/ZRS/GRS), Blob tiers, SAS tokens, and lifecycle management rules.",
+    "order": 5
+  },
+  {
+    "id": "relational-and-nosql-databases",
+    "title": "Azure SQL and Cosmos DB",
+    "blurb": "Azure SQL Database, DTU vs vCore models, and Azure Cosmos DB multi-model APIs, Request Units, and consistency levels.",
+    "order": 6
+  },
+  {
+    "id": "networking-and-connectivity",
+    "title": "Virtual Networks and Connectivity",
+    "blurb": "VNets, subnets, Network Security Groups, load balancing options, VNet peering, and private endpoints.",
+    "order": 7
+  },
+  {
+    "id": "identity-and-security",
+    "title": "Microsoft Entra ID and Key Vault",
+    "blurb": "Microsoft Entra ID, Azure RBAC, Multi-Factor Authentication, Azure Key Vault secrets, and managed identities.",
+    "order": 8
+  },
+  {
+    "id": "monitoring-and-observability",
+    "title": "Monitoring and Observability",
+    "blurb": "Azure Monitor metrics, Log Analytics workspaces, Kusto Query Language (KQL), Application Insights, and alerts.",
+    "order": 9
+  },
+  {
+    "id": "containers-and-microservices",
+    "title": "Containers, Container Apps, and AKS",
+    "blurb": "Azure Container Registry (ACR), Azure Container Instances (ACI), Azure Container Apps, and Azure Kubernetes Service (AKS).",
+    "order": 10
+  },
+  {
+    "id": "iac-and-devops",
+    "title": "Infrastructure as Code and CI/CD",
+    "blurb": "Declarative ARM templates, Bicep DSL, what-if deployments, GitHub Actions CI/CD workflows, and OIDC federation.",
+    "order": 11
+  },
+  {
+    "id": "governance-reliability-architecture",
+    "title": "Governance, Well-Architected, and Security",
+    "blurb": "Cost management, budgets, Azure Policy, resource locks, Defender for Cloud, SLAs, and the 5 Well-Architected pillars.",
+    "order": 12
+  }
+]

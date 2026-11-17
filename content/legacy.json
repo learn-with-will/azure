@@ -1,0 +1,283 @@
+[
+  {
+    "id": "lesson-01",
+    "slug": "what-is-cloud-computing",
+    "title": "What Is Cloud Computing?",
+    "lessons": [
+      "cloud-computing-principles",
+      "cloud-service-models-iaas-paas-saas",
+      "shared-responsibility-model",
+      "cloud-deployment-models",
+      "capex-vs-opex-economics"
+    ]
+  },
+  {
+    "id": "lesson-02",
+    "slug": "what-is-azure-and-getting-started",
+    "title": "What Is Azure and Getting Started",
+    "lessons": [
+      "what-is-azure",
+      "azure-management-tools-portal-cli-powershell",
+      "azure-subscriptions-and-accounts",
+      "azure-cli-authentication-and-commands"
+    ]
+  },
+  {
+    "id": "lesson-03",
+    "slug": "azure-global-infrastructure",
+    "title": "Azure Global Infrastructure",
+    "lessons": [
+      "azure-regions-and-geographies",
+      "availability-zones-and-datacenter-resilience",
+      "region-pairs-and-sovereignty",
+      "selecting-azure-regions"
+    ]
+  },
+  {
+    "id": "lesson-04",
+    "slug": "resource-management-and-arm",
+    "title": "Resource Management and ARM",
+    "lessons": [
+      "azure-resource-hierarchy",
+      "resource-groups-lifecycle",
+      "azure-resource-manager-control-plane",
+      "resource-tagging-strategies"
+    ]
+  },
+  {
+    "id": "lesson-05",
+    "slug": "core-compute-overview",
+    "title": "Core Compute Overview",
+    "lessons": [
+      "azure-compute-decision-matrix",
+      "virtual-machine-scale-sets",
+      "spot-vms-and-burstable-instances"
+    ]
+  },
+  {
+    "id": "lesson-06",
+    "slug": "core-storage-overview",
+    "title": "Core Storage Overview",
+    "lessons": [
+      "azure-storage-account-types",
+      "storage-replication-lrs-zrs-grs",
+      "azure-files-shares-and-protocols"
+    ]
+  },
+  {
+    "id": "lesson-07",
+    "slug": "core-networking-overview",
+    "title": "Core Networking Overview",
+    "lessons": [
+      "virtual-networks-and-subnet-design",
+      "network-security-groups-and-security-rules",
+      "azure-load-balancer-vs-application-gateway",
+      "azure-front-door-and-traffic-manager",
+      "hybrid-connectivity-vpn-and-expressroute"
+    ]
+  },
+  {
+    "id": "lesson-08",
+    "slug": "identity-and-access",
+    "title": "Identity and Access",
+    "lessons": [
+      "microsoft-entra-id-fundamentals",
+      "authentication-vs-authorization-in-cloud",
+      "azure-role-based-access-control-rbac",
+      "mfa-and-conditional-access-policies"
+    ]
+  },
+  {
+    "id": "lesson-09",
+    "slug": "deploy-a-virtual-machine",
+    "title": "Deploy a Virtual Machine",
+    "lessons": [
+      "deploying-vms-with-azure-cli",
+      "vm-sizing-and-series-selection",
+      "vm-managed-disks-and-storage-types",
+      "connecting-via-ssh-and-bastion",
+      "vm-lifecycle-and-cost-deallocation"
+    ]
+  },
+  {
+    "id": "lesson-10",
+    "slug": "host-web-apps-with-app-service",
+    "title": "Host Web Apps with App Service",
+    "lessons": [
+      "app-service-architecture-and-plans",
+      "deploying-apps-to-app-service",
+      "app-service-scaling-up-and-out",
+      "deployment-slots-and-zero-downtime",
+      "custom-domains-and-managed-tls"
+    ]
+  },
+  {
+    "id": "lesson-11",
+    "slug": "serverless-with-azure-functions",
+    "title": "Serverless with Azure Functions",
+    "lessons": [
+      "azure-functions-event-driven-serverless",
+      "functions-triggers-and-bindings",
+      "functions-hosting-plans-and-cold-starts",
+      "creating-functions-with-azure-cli"
+    ]
+  },
+  {
+    "id": "lesson-12",
+    "slug": "store-data-with-blob-storage",
+    "title": "Store Data with Blob Storage",
+    "lessons": [
+      "blob-storage-containers-and-tiers",
+      "managing-blobs-with-azure-cli",
+      "shared-access-signatures-sas",
+      "blob-lifecycle-management-rules",
+      "static-website-hosting-in-blob-storage",
+      "storage-security-and-entra-id-rbac"
+    ]
+  },
+  {
+    "id": "lesson-13",
+    "slug": "relational-data-with-azure-sql",
+    "title": "Relational Data with Azure SQL",
+    "lessons": [
+      "azure-sql-service-tiers-and-deployment-options",
+      "azure-sql-dtu-vs-vcore-purchasing-models",
+      "azure-sql-serverless-and-auto-pause",
+      "azure-sql-firewall-and-connectivity",
+      "azure-sql-automated-backups-and-recovery"
+    ]
+  },
+  {
+    "id": "lesson-14",
+    "slug": "nosql-with-cosmos-db",
+    "title": "NoSQL with Cosmos DB",
+    "lessons": [
+      "cosmos-db-architecture-and-multi-model-apis",
+      "request-units-and-capacity-planning",
+      "cosmos-db-partition-key-selection",
+      "cosmos-db-five-consistency-levels",
+      "cosmos-db-global-distribution-and-multi-write"
+    ]
+  },
+  {
+    "id": "lesson-15",
+    "slug": "networking-hands-on",
+    "title": "Networking Hands-On",
+    "lessons": [
+      "creating-vnets-and-subnets-with-azure-cli",
+      "vnet-peering-hub-and-spoke-architecture",
+      "private-endpoints-and-private-link",
+      "nsg-troubleshooting-and-effective-security-rules"
+    ]
+  },
+  {
+    "id": "lesson-16",
+    "slug": "secrets-and-configuration-with-key-vault",
+    "title": "Secrets and Configuration with Key Vault",
+    "lessons": [
+      "azure-key-vault-secrets-keys-certificates",
+      "managed-identities-for-azure-resources",
+      "app-service-key-vault-references",
+      "azure-app-configuration-centralized-settings",
+      "avoiding-hardcoded-credentials"
+    ]
+  },
+  {
+    "id": "lesson-17",
+    "slug": "monitoring-and-observability",
+    "title": "Monitoring and Observability",
+    "lessons": [
+      "azure-monitor-architecture-metrics-and-logs",
+      "log-analytics-workspaces-and-data-ingestion",
+      "querying-logs-with-kusto-query-language-kql",
+      "application-insights-apm-and-distributed-tracing",
+      "azure-monitor-alerts-and-action-groups",
+      "dashboards-and-workbooks-visualization",
+      "diagnostic-settings-configuration",
+      "alert-fatigue-and-threshold-tuning"
+    ]
+  },
+  {
+    "id": "lesson-18",
+    "slug": "containers-on-azure",
+    "title": "Containers on Azure",
+    "lessons": [
+      "azure-container-options-decision-guide",
+      "azure-container-registry-acr-basics",
+      "deploying-single-containers-with-aci",
+      "azure-container-apps-serverless-containers",
+      "container-apps-dapr-and-keda-integration",
+      "azure-kubernetes-service-aks-architecture",
+      "aks-cluster-networking-and-ingress",
+      "container-security-and-acr-vulnerability-scanning"
+    ]
+  },
+  {
+    "id": "lesson-19",
+    "slug": "infrastructure-as-code-with-bicep",
+    "title": "Infrastructure as Code with Bicep",
+    "lessons": [
+      "infrastructure-as-code-arm-vs-bicep",
+      "writing-bicep-declarative-templates",
+      "bicep-parameters-variables-and-outputs",
+      "deploying-bicep-with-azure-cli",
+      "bicep-modules-and-reusable-infrastructure",
+      "what-if-operation-and-idempotency"
+    ]
+  },
+  {
+    "id": "lesson-20",
+    "slug": "cicd-to-azure",
+    "title": "CI/CD to Azure",
+    "lessons": [
+      "cicd-fundamentals-github-actions-and-azure-pipelines",
+      "oidc-workload-identity-federation",
+      "github-actions-azure-deployment-workflow",
+      "deployment-environments-and-manual-approvals"
+    ]
+  },
+  {
+    "id": "lesson-21",
+    "slug": "cost-management-and-governance",
+    "title": "Cost Management and Governance",
+    "lessons": [
+      "cloud-cost-estimation-and-pricing-calculator",
+      "azure-cost-management-and-budget-alerts",
+      "azure-reservations-and-savings-plans",
+      "azure-policy-and-compliance-enforcement",
+      "resource-locks-preventing-accidental-deletion"
+    ]
+  },
+  {
+    "id": "lesson-22",
+    "slug": "security-in-azure",
+    "title": "Security in Azure",
+    "lessons": [
+      "zero-trust-architecture-in-azure",
+      "microsoft-defender-for-cloud-and-secure-score",
+      "microsoft-sentinel-cloud-native-siem",
+      "azure-data-encryption-at-rest-and-in-transit"
+    ]
+  },
+  {
+    "id": "lesson-23",
+    "slug": "reliability-and-scaling",
+    "title": "Reliability and Scaling",
+    "lessons": [
+      "azure-slas-and-composite-availability",
+      "vertical-vs-horizontal-autoscale-rules",
+      "azure-backup-and-azure-site-recovery",
+      "recovery-objectives-rto-and-rpo"
+    ]
+  },
+  {
+    "id": "lesson-24",
+    "slug": "well-architected-and-capstone",
+    "title": "Well-Architected and Capstone",
+    "lessons": [
+      "well-architected-framework-five-pillars",
+      "cloud-adoption-framework-guidance",
+      "cloud-architecture-capstone-solution-design"
+    ]
+  }
+]

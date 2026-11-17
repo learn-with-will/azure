@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/learn-with-will/course-shell/main/course.schema.json",
+  "id": "azure",
+  "name": "Azure Learn",
+  "subject": "Microsoft Azure & Cloud Architecture",
+  "description": "Master Microsoft Azure in five-minute bites: cloud fundamentals, virtual machines, App Service, serverless Functions, Blob storage, Cosmos DB, networking, Bicep, CI/CD, and security.",
+  "brand": {
+    "color": "#0067bb",
+    "scale": {
+      "50": "#eff6fc",
+      "100": "#d5e9f7",
+      "200": "#aed3ef",
+      "300": "#7bb8e4",
+      "400": "#3f97d7",
+      "500": "#0078d4",
+      "600": "#0067bb",
+      "700": "#01549a",
+      "800": "#08487f",
+      "900": "#0c3c67",
+      "950": "#082644"
+    },
+    "gradient": [
+      "#005a9e",
+      "#0078d4",
+      "#0e97c0"
+    ],
+    "gradientDark": [
+      "#0078d4",
+      "#0067bb",
+      "#0e97c0"
+    ]
+  },
+  "home": {
+    "badge": "Azure & Cloud Architecture",
+    "headline": [
+      "Master Microsoft Azure in ",
+      "five-minute bites",
+      "."
+    ],
+    "searchExamples": [
+      "Bicep",
+      "Cosmos DB",
+      "App Service"
+    ],
+    "featuredLesson": "cloud-computing-principles",
+    "featuredCode": {
+      "lang": "bicep",
+      "code": "param location string = resourceGroup().location\n\nresource storage 'Microsoft.Storage/storageAccounts@2023-05-01' = {\n  name: 'stappprod001'\n  location: location\n  sku: { name: 'Standard_LRS' }\n  kind: 'StorageV2'\n}"
+    },
+    "quizPreview": {
+      "topic": "cloud-fundamentals",
+      "prompt": "In the cloud shared responsibility model, which item is ALWAYS the customer's responsibility across all service models (IaaS, PaaS, SaaS)?",
+      "options": [
+        "Physical datacenter security",
+        "Data and identities/access management",
+        "Operating system patching",
+        "Virtual network hardware maintenance"
+      ],
+      "selected": 1
+    }
+  },
+  "codeLanguages": [
+    "bash",
+    "json",
+    "yaml",
+    "bicep",
+    "sql"
+  ]
+}

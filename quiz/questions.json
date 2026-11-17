@@ -1,0 +1,3302 @@
+[
+  {
+    "id": "cloud-fundamentals-l01-q1",
+    "topic": "cloud-fundamentals",
+    "lesson": "cloud-computing-principles",
+    "type": "single-choice",
+    "prompt": "Which best describes cloud computing?",
+    "explanation": "Cloud computing means renting computing resources (servers, storage, databases, software) over the internet and paying per use, instead of owning the hardware.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buying and running your own servers on-site"
+      },
+      {
+        "id": "b",
+        "text": "Renting computing resources over the internet and paying for what you use"
+      },
+      {
+        "id": "c",
+        "text": "A programming language for the web"
+      },
+      {
+        "id": "d",
+        "text": "Storing files only on your local hard drive"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "cloud-fundamentals-l01-q2",
+    "topic": "cloud-fundamentals",
+    "lesson": "shared-responsibility-model",
+    "type": "multiple-choice",
+    "prompt": "In the shared responsibility model, which items are ALWAYS the customer's responsibility, regardless of service model? Select all that apply.",
+    "explanation": "Data, identities/accounts, and access management are always the customer's responsibility. The provider secures the physical datacenter and underlying infrastructure.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Your data"
+      },
+      {
+        "id": "b",
+        "text": "Your accounts and identities"
+      },
+      {
+        "id": "c",
+        "text": "Managing who has access"
+      },
+      {
+        "id": "d",
+        "text": "Physical security of the datacenter"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "cloud-fundamentals-l01-q3",
+    "topic": "cloud-fundamentals",
+    "lesson": "cloud-service-models-iaas-paas-saas",
+    "type": "fill-blank",
+    "prompt": "The service model where you use finished software and manage almost nothing (like Microsoft 365) is abbreviated ____.",
+    "explanation": "SaaS (Software as a Service) delivers finished software over the web; the provider runs everything and you manage only your data and users.",
+    "answer": [
+      "SaaS",
+      "software as a service"
+    ]
+  },
+  {
+    "id": "cloud-fundamentals-l01-q4",
+    "topic": "cloud-fundamentals",
+    "lesson": "cloud-service-models-iaas-paas-saas",
+    "type": "ordering",
+    "prompt": "Order these from the MOST you manage yourself to the LEAST.",
+    "explanation": "On-premises means you manage everything; IaaS you manage the OS and up; PaaS you manage the app and data; SaaS you manage almost nothing.",
+    "items": [
+      {
+        "id": "onprem",
+        "text": "On-premises"
+      },
+      {
+        "id": "iaas",
+        "text": "IaaS"
+      },
+      {
+        "id": "paas",
+        "text": "PaaS"
+      },
+      {
+        "id": "saas",
+        "text": "SaaS"
+      }
+    ],
+    "answer": [
+      "onprem",
+      "iaas",
+      "paas",
+      "saas"
+    ]
+  },
+  {
+    "id": "cloud-fundamentals-l01-q5",
+    "topic": "cloud-fundamentals",
+    "lesson": "cloud-deployment-models",
+    "type": "match-pair",
+    "prompt": "Match each deployment term to its description.",
+    "explanation": "Public is shared; private is dedicated to one organization; hybrid connects public and private; multicloud uses more than one provider.",
+    "pairs": [
+      {
+        "left": "Public cloud",
+        "right": "Shared provider datacenters open to everyone"
+      },
+      {
+        "left": "Private cloud",
+        "right": "Cloud infrastructure dedicated to one organization"
+      },
+      {
+        "left": "Hybrid cloud",
+        "right": "Public and private connected together"
+      },
+      {
+        "left": "Multicloud",
+        "right": "Using more than one cloud provider"
+      }
+    ]
+  },
+  {
+    "id": "cloud-fundamentals-l02-q1",
+    "topic": "cloud-fundamentals",
+    "lesson": "what-is-azure",
+    "type": "single-choice",
+    "prompt": "What is an Azure subscription?",
+    "explanation": "A subscription is a billing and management boundary. Resources are created inside it and their usage is billed to it; you can have several (e.g., dev and production).",
+    "options": [
+      {
+        "id": "a",
+        "text": "A programming language used in Azure"
+      },
+      {
+        "id": "b",
+        "text": "A billing and management boundary that resources are created inside"
+      },
+      {
+        "id": "c",
+        "text": "A single virtual machine"
+      },
+      {
+        "id": "d",
+        "text": "The web GUI for managing Azure"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "cloud-fundamentals-l02-q2",
+    "topic": "cloud-fundamentals",
+    "lesson": "azure-subscriptions-and-accounts",
+    "type": "multiple-choice",
+    "prompt": "Which of these are ways to interact with Azure? Select all that apply.",
+    "explanation": "All four are valid ways to work with Azure. They ultimately call the same Azure REST API.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Azure portal (web GUI)"
+      },
+      {
+        "id": "b",
+        "text": "The Azure CLI (az)"
+      },
+      {
+        "id": "c",
+        "text": "Azure PowerShell (Az module)"
+      },
+      {
+        "id": "d",
+        "text": "Cloud Shell"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "id": "cloud-fundamentals-l02-q3",
+    "topic": "cloud-fundamentals",
+    "lesson": "azure-cli-authentication-and-commands",
+    "type": "fill-blank",
+    "prompt": "The Azure CLI command that signs you in is `az ____`.",
+    "explanation": "`az login` opens a browser to authenticate; then `az account show` displays your active subscription.",
+    "answer": [
+      "login"
+    ]
+  },
+  {
+    "id": "cloud-fundamentals-l02-q4",
+    "topic": "cloud-fundamentals",
+    "lesson": "azure-management-tools-portal-cli-powershell",
+    "type": "ordering",
+    "prompt": "Order the Azure hierarchy from broadest to most specific.",
+    "explanation": "Identity and billing flow account \u2192 subscription \u2192 resource group \u2192 resource.",
+    "items": [
+      {
+        "id": "acct",
+        "text": "Account"
+      },
+      {
+        "id": "sub",
+        "text": "Subscription"
+      },
+      {
+        "id": "rg",
+        "text": "Resource group"
+      },
+      {
+        "id": "res",
+        "text": "Resource"
+      }
+    ],
+    "answer": [
+      "acct",
+      "sub",
+      "rg",
+      "res"
+    ]
+  },
+  {
+    "id": "cloud-fundamentals-l02-q5",
+    "topic": "cloud-fundamentals",
+    "lesson": "azure-management-tools-portal-cli-powershell",
+    "type": "match-pair",
+    "prompt": "Match each tool or term to what it is.",
+    "explanation": "The portal is the GUI; the CLI is command-line (az); Cloud Shell is a ready-to-use browser shell; a tenant is your Microsoft Entra directory.",
+    "pairs": [
+      {
+        "left": "Azure portal",
+        "right": "Web GUI for exploring and managing Azure"
+      },
+      {
+        "left": "Azure CLI",
+        "right": "Command-line tool whose commands start with az"
+      },
+      {
+        "left": "Cloud Shell",
+        "right": "A signed-in shell built into the browser"
+      },
+      {
+        "left": "Tenant",
+        "right": "Your organization's directory of users and groups"
+      }
+    ]
+  },
+  {
+    "id": "azure-architecture-and-governance-l03-q1",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "azure-regions-and-geographies",
+    "type": "single-choice",
+    "prompt": "What does an availability zone protect against?",
+    "explanation": "Availability zones are physically separate locations within a region, each with independent power, cooling, and networking, so one zone failing doesn't take the others down.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A single-datacenter (zone-level) failure within a region"
+      },
+      {
+        "id": "b",
+        "text": "A bug in your application code"
+      },
+      {
+        "id": "c",
+        "text": "Running out of subscription credit"
+      },
+      {
+        "id": "d",
+        "text": "A slow internet connection at the user's home"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "azure-architecture-and-governance-l03-q2",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "availability-zones-and-datacenter-resilience",
+    "type": "multiple-choice",
+    "prompt": "Which factors should guide your choice of region? Select all that apply.",
+    "explanation": "All four matter: proximity/latency, service availability, price differences, and where data must legally reside.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Latency / proximity to your users"
+      },
+      {
+        "id": "b",
+        "text": "Whether the services and sizes you need are available there"
+      },
+      {
+        "id": "c",
+        "text": "Price (it can vary by region)"
+      },
+      {
+        "id": "d",
+        "text": "Compliance / data-residency requirements"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "id": "azure-architecture-and-governance-l03-q3",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "region-pairs-and-sovereignty",
+    "type": "fill-blank",
+    "prompt": "Two regions in the same geography that some services use for disaster recovery are called a region ____.",
+    "explanation": "A region pair is two regions in a geography used by some services to replicate for disaster recovery. Not every region has a pair.",
+    "answer": [
+      "pair"
+    ]
+  },
+  {
+    "id": "azure-architecture-and-governance-l03-q4",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "selecting-azure-regions",
+    "type": "ordering",
+    "prompt": "Order these from the SMALLEST unit to the LARGEST.",
+    "explanation": "Datacenters make up a region; a geography contains one or more regions and preserves data-residency boundaries.",
+    "items": [
+      {
+        "id": "dc",
+        "text": "Datacenter"
+      },
+      {
+        "id": "region",
+        "text": "Region"
+      },
+      {
+        "id": "geo",
+        "text": "Geography"
+      }
+    ],
+    "answer": [
+      "dc",
+      "region",
+      "geo"
+    ]
+  },
+  {
+    "id": "azure-architecture-and-governance-l03-q5",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "azure-regions-and-geographies",
+    "type": "match-pair",
+    "prompt": "Match each infrastructure term to its meaning.",
+    "explanation": "Regions are groups of datacenters; zones are independent locations within a region; geographies preserve residency; sovereign clouds are isolated instances.",
+    "pairs": [
+      {
+        "left": "Region",
+        "right": "A set of nearby datacenters you deploy into"
+      },
+      {
+        "left": "Availability zone",
+        "right": "A physically separate, independently powered location in a region"
+      },
+      {
+        "left": "Geography",
+        "right": "A data-residency and compliance boundary"
+      },
+      {
+        "left": "Sovereign cloud",
+        "right": "An isolated Azure instance such as Azure Government"
+      }
+    ]
+  },
+  {
+    "id": "azure-architecture-and-governance-l04-q1",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "azure-resource-hierarchy",
+    "type": "single-choice",
+    "prompt": "What is Azure Resource Manager (ARM)?",
+    "explanation": "ARM is Azure's control plane. Requests from the portal, CLI, PowerShell, SDKs, and REST API all go through it for consistent authentication, RBAC, policy, and routing.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A type of virtual machine"
+      },
+      {
+        "id": "b",
+        "text": "The deployment and management control plane every request goes through"
+      },
+      {
+        "id": "c",
+        "text": "A billing report"
+      },
+      {
+        "id": "d",
+        "text": "A programming language"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "azure-architecture-and-governance-l04-q2",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "resource-groups-lifecycle",
+    "type": "multiple-choice",
+    "prompt": "Which statements about resource groups are true? Select all that apply.",
+    "explanation": "A resource lives in exactly one group; deleting the group deletes its contents; the group's location only stores metadata, so it can hold resources from other regions. Groups can be deleted.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A resource belongs to exactly one resource group at a time"
+      },
+      {
+        "id": "b",
+        "text": "Deleting a resource group deletes everything inside it"
+      },
+      {
+        "id": "c",
+        "text": "A resource group can contain resources from other regions"
+      },
+      {
+        "id": "d",
+        "text": "Resource groups can never be deleted once created"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "azure-architecture-and-governance-l04-q3",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "azure-resource-manager-control-plane",
+    "type": "fill-blank",
+    "prompt": "Name/value labels you attach to resources to organize them and report on cost are called ____.",
+    "explanation": "Tags are name/value pairs used to organize, filter, and report on resources (especially cost). They are not inherited by default.",
+    "answer": [
+      "tags",
+      "tag"
+    ]
+  },
+  {
+    "id": "azure-architecture-and-governance-l04-q4",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "azure-resource-hierarchy",
+    "type": "ordering",
+    "prompt": "Order the management hierarchy from broadest to most specific.",
+    "explanation": "Governance flows management group \u2192 subscription \u2192 resource group \u2192 resource.",
+    "items": [
+      {
+        "id": "mg",
+        "text": "Management group"
+      },
+      {
+        "id": "sub",
+        "text": "Subscription"
+      },
+      {
+        "id": "rg",
+        "text": "Resource group"
+      },
+      {
+        "id": "res",
+        "text": "Resource"
+      }
+    ],
+    "answer": [
+      "mg",
+      "sub",
+      "rg",
+      "res"
+    ]
+  },
+  {
+    "id": "azure-architecture-and-governance-l04-q5",
+    "topic": "azure-architecture-and-governance",
+    "lesson": "resource-tagging-strategies",
+    "type": "match-pair",
+    "prompt": "Match each term to its role.",
+    "explanation": "Management groups govern many subscriptions; resource groups contain resources; ARM is the control plane; tags label resources.",
+    "pairs": [
+      {
+        "left": "Management group",
+        "right": "Applies governance across many subscriptions"
+      },
+      {
+        "left": "Resource group",
+        "right": "Logical container for related resources"
+      },
+      {
+        "left": "ARM",
+        "right": "The control plane for all management requests"
+      },
+      {
+        "left": "Tag",
+        "right": "A label for organizing and cost reporting"
+      }
+    ]
+  },
+  {
+    "id": "virtual-machines-and-compute-l05-q1",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "azure-compute-decision-matrix",
+    "type": "single-choice",
+    "prompt": "Which service is the fully managed (PaaS) way to host a web app or API?",
+    "explanation": "App Service is PaaS web hosting: you deploy code or a container and Azure runs, patches, and scales the platform for you.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Azure Virtual Machine"
+      },
+      {
+        "id": "b",
+        "text": "Azure App Service"
+      },
+      {
+        "id": "c",
+        "text": "Azure Kubernetes Service"
+      },
+      {
+        "id": "d",
+        "text": "Azure Storage"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "virtual-machines-and-compute-l05-q2",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "azure-compute-decision-matrix",
+    "type": "multiple-choice",
+    "prompt": "Which statements about Azure compute are true? Select all that apply.",
+    "explanation": "VMs give control with OS upkeep; Functions scale to zero and bill per run; AKS is managed Kubernetes. App Service is PaaS \u2014 Azure patches the OS, not you.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Virtual Machine (IaaS) gives the most control but you maintain the OS"
+      },
+      {
+        "id": "b",
+        "text": "Azure Functions can scale to zero and bill per execution"
+      },
+      {
+        "id": "c",
+        "text": "AKS is managed Kubernetes for complex orchestration"
+      },
+      {
+        "id": "d",
+        "text": "App Service requires you to patch the operating system yourself"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "virtual-machines-and-compute-l05-q3",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "virtual-machine-scale-sets",
+    "type": "fill-blank",
+    "prompt": "The serverless, event-driven Azure compute service that runs small pieces of code is Azure ____.",
+    "explanation": "Azure Functions runs event-driven code (HTTP, timer, queue, blob triggers) and, on the Consumption plan, scales to zero and bills per execution.",
+    "answer": [
+      "Functions",
+      "function"
+    ]
+  },
+  {
+    "id": "virtual-machines-and-compute-l05-q4",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "azure-compute-decision-matrix",
+    "type": "ordering",
+    "prompt": "Order these from the MOST infrastructure you manage to the LEAST.",
+    "explanation": "A VM (IaaS) has you manage the OS and up; App Service (PaaS) manages the platform; Functions (serverless) has you supply only code.",
+    "items": [
+      {
+        "id": "vm",
+        "text": "Virtual Machine"
+      },
+      {
+        "id": "app",
+        "text": "App Service"
+      },
+      {
+        "id": "fn",
+        "text": "Azure Functions"
+      }
+    ],
+    "answer": [
+      "vm",
+      "app",
+      "fn"
+    ]
+  },
+  {
+    "id": "virtual-machines-and-compute-l05-q5",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "spot-vms-and-burstable-instances",
+    "type": "match-pair",
+    "prompt": "Match each compute service to its description.",
+    "explanation": "VM = IaaS; App Service = PaaS web hosting; Functions = serverless; AKS = managed Kubernetes.",
+    "pairs": [
+      {
+        "left": "Virtual Machine",
+        "right": "IaaS computer where you manage the OS"
+      },
+      {
+        "left": "App Service",
+        "right": "Managed hosting for web apps and APIs"
+      },
+      {
+        "left": "Azure Functions",
+        "right": "Serverless, event-driven code"
+      },
+      {
+        "left": "AKS",
+        "right": "Managed Kubernetes for containers"
+      }
+    ]
+  },
+  {
+    "id": "storage-and-blob-l06-q1",
+    "topic": "storage-and-blob",
+    "lesson": "azure-storage-account-types",
+    "type": "single-choice",
+    "prompt": "Which storage service is best for unstructured objects like images, backups, and logs?",
+    "explanation": "Blob storage is object storage for unstructured data (files, images, video, backups, logs) accessed over HTTP/APIs.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Blob storage"
+      },
+      {
+        "id": "b",
+        "text": "Azure Files"
+      },
+      {
+        "id": "c",
+        "text": "Queue storage"
+      },
+      {
+        "id": "d",
+        "text": "Table storage"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "storage-and-blob-l06-q2",
+    "topic": "storage-and-blob",
+    "lesson": "storage-replication-lrs-zrs-grs",
+    "type": "multiple-choice",
+    "prompt": "Which statements about storage redundancy are true? Select all that apply.",
+    "explanation": "LRS = 3 copies in one datacenter; ZRS = across zones; GRS = plus a secondary region. LRS does NOT protect against a regional outage \u2014 you need geo-redundant options for that.",
+    "options": [
+      {
+        "id": "a",
+        "text": "LRS keeps three copies within a single datacenter"
+      },
+      {
+        "id": "b",
+        "text": "ZRS spreads copies across availability zones in a region"
+      },
+      {
+        "id": "c",
+        "text": "GRS also copies data asynchronously to a secondary region"
+      },
+      {
+        "id": "d",
+        "text": "LRS protects against a full regional outage"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "storage-and-blob-l06-q3",
+    "topic": "storage-and-blob",
+    "lesson": "storage-replication-lrs-zrs-grs",
+    "type": "fill-blank",
+    "prompt": "The offline, lowest-cost blob access tier (which must be rehydrated before reading) is the ____ tier.",
+    "explanation": "The Archive tier is offline and cheapest to store; you must rehydrate a blob (which takes time) before you can read it.",
+    "answer": [
+      "archive",
+      "Archive"
+    ]
+  },
+  {
+    "id": "storage-and-blob-l06-q4",
+    "topic": "storage-and-blob",
+    "lesson": "storage-replication-lrs-zrs-grs",
+    "type": "ordering",
+    "prompt": "Order these redundancy options from LEAST resilient to MOST resilient.",
+    "explanation": "LRS (one datacenter) < ZRS (zones in a region) < GRS (local + secondary region) < GZRS (zonal + secondary region, most resilient).",
+    "items": [
+      {
+        "id": "lrs",
+        "text": "LRS"
+      },
+      {
+        "id": "zrs",
+        "text": "ZRS"
+      },
+      {
+        "id": "grs",
+        "text": "GRS"
+      },
+      {
+        "id": "gzrs",
+        "text": "GZRS"
+      }
+    ],
+    "answer": [
+      "lrs",
+      "zrs",
+      "grs",
+      "gzrs"
+    ]
+  },
+  {
+    "id": "storage-and-blob-l06-q5",
+    "topic": "storage-and-blob",
+    "lesson": "azure-files-shares-and-protocols",
+    "type": "match-pair",
+    "prompt": "Match each storage service to what it provides.",
+    "explanation": "A storage account provides Blob (objects), Files (shares), Queue (messages), and Table (NoSQL key/value).",
+    "pairs": [
+      {
+        "left": "Blob storage",
+        "right": "Object storage for unstructured data"
+      },
+      {
+        "left": "Azure Files",
+        "right": "Managed SMB/NFS file shares"
+      },
+      {
+        "left": "Queue storage",
+        "right": "A simple message queue"
+      },
+      {
+        "left": "Table storage",
+        "right": "NoSQL key/value store"
+      }
+    ]
+  },
+  {
+    "id": "networking-and-connectivity-l07-q1",
+    "topic": "networking-and-connectivity",
+    "lesson": "virtual-networks-and-subnet-design",
+    "type": "single-choice",
+    "prompt": "What is an Azure virtual network (VNet)?",
+    "explanation": "A VNet is your own private, isolated network in a region, divided into subnets, where resources get private IP addresses and communicate.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A private, isolated network in an Azure region where resources get private IPs"
+      },
+      {
+        "id": "b",
+        "text": "A managed database service"
+      },
+      {
+        "id": "c",
+        "text": "A public DNS provider only"
+      },
+      {
+        "id": "d",
+        "text": "A billing boundary for resources"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "networking-and-connectivity-l07-q2",
+    "topic": "networking-and-connectivity",
+    "lesson": "network-security-groups-and-security-rules",
+    "type": "multiple-choice",
+    "prompt": "Which are valid load-balancing services in Azure? Select all that apply.",
+    "explanation": "Load Balancer (L4), Application Gateway (regional L7), and Front Door (global L7) distribute traffic. Key Vault is a secrets store, not a load balancer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Azure Load Balancer (regional, layer 4)"
+      },
+      {
+        "id": "b",
+        "text": "Application Gateway (regional, layer 7)"
+      },
+      {
+        "id": "c",
+        "text": "Azure Front Door (global, layer 7)"
+      },
+      {
+        "id": "d",
+        "text": "Azure Key Vault"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "networking-and-connectivity-l07-q3",
+    "topic": "networking-and-connectivity",
+    "lesson": "hybrid-connectivity-vpn-and-expressroute",
+    "type": "fill-blank",
+    "prompt": "Allow/deny rules that filter traffic by IP, port, and protocol are configured in a ____ security group.",
+    "explanation": "A network security group (NSG) filters traffic with allow/deny rules by source/destination IP, port, and protocol, attached to a subnet or NIC.",
+    "answer": [
+      "network",
+      "NSG"
+    ]
+  },
+  {
+    "id": "networking-and-connectivity-l07-q4",
+    "topic": "networking-and-connectivity",
+    "lesson": "azure-load-balancer-vs-application-gateway",
+    "type": "ordering",
+    "prompt": "Order the path of an inbound request to a web VM from OUTERMOST to the VM.",
+    "explanation": "Traffic comes from the internet, is distributed by a load balancer, filtered by the NSG, and then reaches the VM.",
+    "items": [
+      {
+        "id": "net",
+        "text": "The internet"
+      },
+      {
+        "id": "lb",
+        "text": "Load balancer"
+      },
+      {
+        "id": "nsg",
+        "text": "Network security group"
+      },
+      {
+        "id": "vm",
+        "text": "The VM"
+      }
+    ],
+    "answer": [
+      "net",
+      "lb",
+      "nsg",
+      "vm"
+    ]
+  },
+  {
+    "id": "networking-and-connectivity-l07-q5",
+    "topic": "networking-and-connectivity",
+    "lesson": "azure-front-door-and-traffic-manager",
+    "type": "match-pair",
+    "prompt": "Match each connectivity option to its description.",
+    "explanation": "VPN Gateway is an internet tunnel; ExpressRoute is a private link; Front Door is global L7; Azure DNS hosts your domains.",
+    "pairs": [
+      {
+        "left": "VPN Gateway",
+        "right": "Encrypted tunnel over the public internet"
+      },
+      {
+        "left": "ExpressRoute",
+        "right": "Private, dedicated connection (not over the internet)"
+      },
+      {
+        "left": "Front Door",
+        "right": "Global layer-7 routing with CDN and WAF"
+      },
+      {
+        "left": "Azure DNS",
+        "right": "Hosts DNS domains and resolves names"
+      }
+    ]
+  },
+  {
+    "id": "identity-and-security-l08-q1",
+    "topic": "identity-and-security",
+    "lesson": "microsoft-entra-id-fundamentals",
+    "type": "single-choice",
+    "prompt": "Which describes authentication (as opposed to authorization)?",
+    "explanation": "Authentication answers 'who are you?' (proving identity by signing in). Authorization answers 'what may you do?' \u2014 that's RBAC.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deciding what actions an identity is allowed to perform"
+      },
+      {
+        "id": "b",
+        "text": "Proving who you are, usually by signing in"
+      },
+      {
+        "id": "c",
+        "text": "Billing your usage to a subscription"
+      },
+      {
+        "id": "d",
+        "text": "Encrypting data at rest"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "identity-and-security-l08-q2",
+    "topic": "identity-and-security",
+    "lesson": "authentication-vs-authorization-in-cloud",
+    "type": "multiple-choice",
+    "prompt": "Which statements about Microsoft Entra ID and RBAC are true? Select all that apply.",
+    "explanation": "Entra ID is the renamed Azure AD; RBAC = principal + role + scope, inheriting downward. Entra ID is NOT the same as on-premises AD DS (no OUs/Group Policy/domain join).",
+    "options": [
+      {
+        "id": "a",
+        "text": "Microsoft Entra ID is the current name for Azure Active Directory"
+      },
+      {
+        "id": "b",
+        "text": "An RBAC role assignment combines a principal, a role, and a scope"
+      },
+      {
+        "id": "c",
+        "text": "Role assignments inherit downward through the hierarchy"
+      },
+      {
+        "id": "d",
+        "text": "Entra ID is identical to on-premises Active Directory Domain Services"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "identity-and-security-l08-q3",
+    "topic": "identity-and-security",
+    "lesson": "azure-role-based-access-control-rbac",
+    "type": "fill-blank",
+    "prompt": "Requiring two or more proofs of identity at sign-in (like a password plus a phone app) is abbreviated ____.",
+    "explanation": "MFA (multifactor authentication) requires two or more verification factors and blocks the vast majority of password-based attacks.",
+    "answer": [
+      "MFA",
+      "multifactor authentication",
+      "multi-factor authentication"
+    ]
+  },
+  {
+    "id": "identity-and-security-l08-q4",
+    "topic": "identity-and-security",
+    "lesson": "azure-role-based-access-control-rbac",
+    "type": "ordering",
+    "prompt": "Order these built-in roles from LEAST to MOST access.",
+    "explanation": "Reader can only view; Contributor can manage resources but not grant access; Owner has full access including managing others' access.",
+    "items": [
+      {
+        "id": "reader",
+        "text": "Reader"
+      },
+      {
+        "id": "contributor",
+        "text": "Contributor"
+      },
+      {
+        "id": "owner",
+        "text": "Owner"
+      }
+    ],
+    "answer": [
+      "reader",
+      "contributor",
+      "owner"
+    ]
+  },
+  {
+    "id": "identity-and-security-l08-q5",
+    "topic": "identity-and-security",
+    "lesson": "mfa-and-conditional-access-policies",
+    "type": "match-pair",
+    "prompt": "Match each term to its meaning.",
+    "explanation": "Owner is full control; Contributor manages resources but not access; Reader is view-only; least privilege grants the minimum necessary.",
+    "pairs": [
+      {
+        "left": "Owner",
+        "right": "Full access including managing others' access"
+      },
+      {
+        "left": "Contributor",
+        "right": "Manage resources but not grant access to others"
+      },
+      {
+        "left": "Reader",
+        "right": "View resources only"
+      },
+      {
+        "left": "Least privilege",
+        "right": "Grant only the minimum access needed"
+      }
+    ]
+  },
+  {
+    "id": "virtual-machines-and-compute-l09-q1",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "deploying-vms-with-azure-cli",
+    "type": "single-choice",
+    "prompt": "You shut a VM down from inside its operating system. What happens to compute billing?",
+    "explanation": "An in-OS shutdown leaves the VM allocated, so compute keeps billing. Only deallocating (portal Stop or `az vm deallocate`) releases the compute.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compute billing stops immediately"
+      },
+      {
+        "id": "b",
+        "text": "You keep paying for compute because the VM is still allocated"
+      },
+      {
+        "id": "c",
+        "text": "The VM and its disks are permanently deleted"
+      },
+      {
+        "id": "d",
+        "text": "The subscription is cancelled"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "virtual-machines-and-compute-l09-q2",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "vm-sizing-and-series-selection",
+    "type": "multiple-choice",
+    "prompt": "Which statements about Azure VMs are true? Select all that apply.",
+    "explanation": "You pick image and size; SSH keys beat passwords; disks cost while deallocated. Exposing SSH/RDP to the entire internet is a security risk to avoid.",
+    "options": [
+      {
+        "id": "a",
+        "text": "You choose an image (OS) and a size (CPU/memory) when creating one"
+      },
+      {
+        "id": "b",
+        "text": "SSH keys are more secure than passwords for Linux VMs"
+      },
+      {
+        "id": "c",
+        "text": "Managed disks are billed even while the VM is deallocated"
+      },
+      {
+        "id": "d",
+        "text": "Exposing SSH/RDP to the whole internet is a recommended default"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "virtual-machines-and-compute-l09-q3",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "vm-managed-disks-and-storage-types",
+    "type": "fill-blank",
+    "prompt": "Releasing a VM's compute so you stop paying for its vCPUs (while keeping the disks) is called ____.",
+    "explanation": "Deallocating releases the compute so you stop paying for vCPUs; disks and static IPs still cost until you delete them.",
+    "answer": [
+      "deallocate",
+      "deallocating",
+      "deallocation"
+    ]
+  },
+  {
+    "id": "virtual-machines-and-compute-l09-q4",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "connecting-via-ssh-and-bastion",
+    "type": "ordering",
+    "prompt": "Order the typical lifecycle of a learning VM.",
+    "explanation": "Create, connect and use, deallocate to pause billing, then delete the resource group to remove everything.",
+    "items": [
+      {
+        "id": "create",
+        "text": "Create the VM"
+      },
+      {
+        "id": "connect",
+        "text": "Connect over SSH"
+      },
+      {
+        "id": "deallocate",
+        "text": "Deallocate when idle"
+      },
+      {
+        "id": "delete",
+        "text": "Delete the resource group"
+      }
+    ],
+    "answer": [
+      "create",
+      "connect",
+      "deallocate",
+      "delete"
+    ]
+  },
+  {
+    "id": "virtual-machines-and-compute-l09-q5",
+    "topic": "virtual-machines-and-compute",
+    "lesson": "vm-lifecycle-and-cost-deallocation",
+    "type": "match-pair",
+    "prompt": "Match each VM concept to its meaning.",
+    "explanation": "Image = the OS template; size = CPU/memory; managed disk = the VM's storage; SSH = remote connection for Linux.",
+    "pairs": [
+      {
+        "left": "Image",
+        "right": "The OS/software template a VM starts from"
+      },
+      {
+        "left": "Size",
+        "right": "The VM's CPU and memory configuration"
+      },
+      {
+        "left": "Managed disk",
+        "right": "An Azure-managed virtual disk backing the VM"
+      },
+      {
+        "left": "SSH",
+        "right": "How you connect to a Linux VM"
+      }
+    ]
+  },
+  {
+    "id": "app-service-and-serverless-l10-q1",
+    "topic": "app-service-and-serverless",
+    "lesson": "app-service-architecture-and-plans",
+    "type": "single-choice",
+    "prompt": "What is the relationship between an App Service plan and a web app?",
+    "explanation": "The App Service plan provides the compute (region, OS, size, tier); web apps run inside it, and multiple apps can share one plan.",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are two names for the same thing"
+      },
+      {
+        "id": "b",
+        "text": "The plan is the compute; the web app runs inside it, and several apps can share a plan"
+      },
+      {
+        "id": "c",
+        "text": "The web app is the compute; the plan runs inside the app"
+      },
+      {
+        "id": "d",
+        "text": "A plan can hold only one web app, ever"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "app-service-and-serverless-l10-q2",
+    "topic": "app-service-and-serverless",
+    "lesson": "deploying-apps-to-app-service",
+    "type": "multiple-choice",
+    "prompt": "Which statements about App Service are true? Select all that apply.",
+    "explanation": "Scale up = bigger, scale out = more instances; autoscale/slots need Standard+; managed certificates give free TLS. App Service is PaaS, so Azure patches the OS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Scaling up means moving to a bigger plan; scaling out means more instances"
+      },
+      {
+        "id": "b",
+        "text": "Autoscale and deployment slots require Standard tier or higher"
+      },
+      {
+        "id": "c",
+        "text": "A managed certificate can provide free HTTPS on a custom domain"
+      },
+      {
+        "id": "d",
+        "text": "You must patch the underlying OS yourself"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "app-service-and-serverless-l10-q3",
+    "topic": "app-service-and-serverless",
+    "lesson": "app-service-scaling-up-and-out",
+    "type": "fill-blank",
+    "prompt": "A live copy of a web app (like 'staging') that you can swap into production for a zero-downtime release is a deployment ____.",
+    "explanation": "Deployment slots (Standard+) let you deploy and test in staging, then swap into production near-instantly, with an easy swap-back to roll back.",
+    "answer": [
+      "slot",
+      "slots"
+    ]
+  },
+  {
+    "id": "app-service-and-serverless-l10-q4",
+    "topic": "app-service-and-serverless",
+    "lesson": "deployment-slots-and-zero-downtime",
+    "type": "ordering",
+    "prompt": "Order the steps of a zero-downtime release using slots.",
+    "explanation": "Deploy to staging, test there, then swap into production; if there's a problem, swap back to roll back.",
+    "items": [
+      {
+        "id": "deploy",
+        "text": "Deploy the new version to the staging slot"
+      },
+      {
+        "id": "test",
+        "text": "Test it in staging"
+      },
+      {
+        "id": "swap",
+        "text": "Swap staging into production"
+      }
+    ],
+    "answer": [
+      "deploy",
+      "test",
+      "swap"
+    ]
+  },
+  {
+    "id": "app-service-and-serverless-l10-q5",
+    "topic": "app-service-and-serverless",
+    "lesson": "custom-domains-and-managed-tls",
+    "type": "match-pair",
+    "prompt": "Match each App Service term to its meaning.",
+    "explanation": "The plan is the compute; scale up = bigger; scale out = more instances; a slot is a swappable copy.",
+    "pairs": [
+      {
+        "left": "App Service plan",
+        "right": "The compute apps run on"
+      },
+      {
+        "left": "Scale up",
+        "right": "Move to a bigger plan"
+      },
+      {
+        "left": "Scale out",
+        "right": "Run more instances"
+      },
+      {
+        "left": "Deployment slot",
+        "right": "A swappable live copy like staging"
+      }
+    ]
+  },
+  {
+    "id": "app-service-and-serverless-l11-q1",
+    "topic": "app-service-and-serverless",
+    "lesson": "azure-functions-event-driven-serverless",
+    "type": "single-choice",
+    "prompt": "What is a trigger in Azure Functions?",
+    "explanation": "Every function has exactly one trigger \u2014 the event (HTTP request, timer, queue message, new blob, etc.) that starts it. Bindings then connect it to data.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The single event that starts a function running"
+      },
+      {
+        "id": "b",
+        "text": "A way to store secrets"
+      },
+      {
+        "id": "c",
+        "text": "The billing plan for the function app"
+      },
+      {
+        "id": "d",
+        "text": "A network security rule"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "app-service-and-serverless-l11-q2",
+    "topic": "app-service-and-serverless",
+    "lesson": "functions-triggers-and-bindings",
+    "type": "multiple-choice",
+    "prompt": "Which statements about the Consumption plan are true? Select all that apply.",
+    "explanation": "Consumption scales to zero, bills per run, and can cold-start with a time limit. Long-running, always-on work is a poor fit \u2014 use Premium/Dedicated or another service.",
+    "options": [
+      {
+        "id": "a",
+        "text": "It scales automatically, including to zero when idle"
+      },
+      {
+        "id": "b",
+        "text": "You pay per execution"
+      },
+      {
+        "id": "c",
+        "text": "It can have cold starts and a maximum execution time"
+      },
+      {
+        "id": "d",
+        "text": "It's ideal for long-running, always-on processes"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "app-service-and-serverless-l11-q3",
+    "topic": "app-service-and-serverless",
+    "lesson": "functions-hosting-plans-and-cold-starts",
+    "type": "fill-blank",
+    "prompt": "The short startup delay when a new instance spins up after the function has been idle is called a cold ____.",
+    "explanation": "A cold start is the startup delay after idle. The Premium plan avoids it by keeping instances pre-warmed.",
+    "answer": [
+      "start"
+    ]
+  },
+  {
+    "id": "app-service-and-serverless-l11-q4",
+    "topic": "app-service-and-serverless",
+    "lesson": "functions-hosting-plans-and-cold-starts",
+    "type": "ordering",
+    "prompt": "Order the flow of a blob-triggered function that writes a result.",
+    "explanation": "An event (new blob) fires the trigger, the function runs, and an output binding writes the result \u2014 with little glue code.",
+    "items": [
+      {
+        "id": "event",
+        "text": "A new blob is uploaded"
+      },
+      {
+        "id": "trigger",
+        "text": "The trigger fires the function"
+      },
+      {
+        "id": "run",
+        "text": "The function code runs"
+      },
+      {
+        "id": "output",
+        "text": "An output binding writes the result"
+      }
+    ],
+    "answer": [
+      "event",
+      "trigger",
+      "run",
+      "output"
+    ]
+  },
+  {
+    "id": "app-service-and-serverless-l11-q5",
+    "topic": "app-service-and-serverless",
+    "lesson": "creating-functions-with-azure-cli",
+    "type": "match-pair",
+    "prompt": "Match each Functions concept to its meaning.",
+    "explanation": "Trigger starts the function; bindings connect to data; Consumption scales to zero; Premium stays warm.",
+    "pairs": [
+      {
+        "left": "Trigger",
+        "right": "The event that starts a function"
+      },
+      {
+        "left": "Binding",
+        "right": "A declarative connection to data"
+      },
+      {
+        "left": "Consumption plan",
+        "right": "Scales to zero, bills per execution"
+      },
+      {
+        "left": "Premium plan",
+        "right": "Keeps instances pre-warmed (no cold starts)"
+      }
+    ]
+  },
+  {
+    "id": "storage-and-blob-l12-q1",
+    "topic": "storage-and-blob",
+    "lesson": "blob-storage-containers-and-tiers",
+    "type": "single-choice",
+    "prompt": "What is a Shared Access Signature (SAS)?",
+    "explanation": "A SAS is a time-limited, scoped token (usually in a URL) granting specific permissions. A user-delegation SAS, signed with Entra ID credentials, is preferred over key-based SAS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A permanent master key for the whole storage account"
+      },
+      {
+        "id": "b",
+        "text": "A time-limited, scoped token that grants specific permissions to storage data"
+      },
+      {
+        "id": "c",
+        "text": "A type of blob access tier"
+      },
+      {
+        "id": "d",
+        "text": "A network security group rule"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "storage-and-blob-l12-q2",
+    "topic": "storage-and-blob",
+    "lesson": "managing-blobs-with-azure-cli",
+    "type": "multiple-choice",
+    "prompt": "Which are good security practices for Blob storage? Select all that apply.",
+    "explanation": "Prefer Entra ID/RBAC; keep SAS scoped and short; prefer user-delegation SAS. Never embed account keys in app code \u2014 a leak exposes the whole account.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prefer Microsoft Entra ID + RBAC for access"
+      },
+      {
+        "id": "b",
+        "text": "Keep SAS tokens narrowly scoped and short-lived"
+      },
+      {
+        "id": "c",
+        "text": "Use a user-delegation SAS instead of an account-key SAS when possible"
+      },
+      {
+        "id": "d",
+        "text": "Embed account keys directly in application code"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "storage-and-blob-l12-q3",
+    "topic": "storage-and-blob",
+    "lesson": "shared-access-signatures-sas",
+    "type": "fill-blank",
+    "prompt": "Rules that automatically move blobs between tiers or delete them based on age are called ____ management.",
+    "explanation": "Lifecycle management rules auto-transition blobs between tiers (e.g., to cool/archive) or delete them by age, reducing cost without manual work.",
+    "answer": [
+      "lifecycle"
+    ]
+  },
+  {
+    "id": "storage-and-blob-l12-q4",
+    "topic": "storage-and-blob",
+    "lesson": "blob-lifecycle-management-rules",
+    "type": "ordering",
+    "prompt": "Order the steps to share a single blob with a read-only SAS.",
+    "explanation": "Scope permissions to read, set a short expiry, generate the SAS, then share the URL \u2014 least privilege and minimal exposure.",
+    "items": [
+      {
+        "id": "perms",
+        "text": "Choose read-only permission"
+      },
+      {
+        "id": "expiry",
+        "text": "Set a short expiry"
+      },
+      {
+        "id": "gen",
+        "text": "Generate the SAS URL"
+      },
+      {
+        "id": "share",
+        "text": "Share the URL"
+      }
+    ],
+    "answer": [
+      "perms",
+      "expiry",
+      "gen",
+      "share"
+    ]
+  },
+  {
+    "id": "storage-and-blob-l12-q5",
+    "topic": "storage-and-blob",
+    "lesson": "static-website-hosting-in-blob-storage",
+    "type": "match-pair",
+    "prompt": "Match each authorization method or feature to its description.",
+    "explanation": "Account keys are all-powerful (avoid in apps); SAS is scoped/temporary; Entra ID + RBAC is most secure; static website hosting serves files from $web.",
+    "pairs": [
+      {
+        "left": "Account key",
+        "right": "Master key for the whole account (avoid in apps)"
+      },
+      {
+        "left": "SAS",
+        "right": "Time-limited, scoped access token"
+      },
+      {
+        "left": "Entra ID + RBAC",
+        "right": "Most secure, manageable access"
+      },
+      {
+        "left": "Static website",
+        "right": "Serves files from the $web container"
+      }
+    ]
+  },
+  {
+    "id": "relational-and-nosql-databases-l13-q1",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "azure-sql-service-tiers-and-deployment-options",
+    "type": "single-choice",
+    "prompt": "Which option is a fully managed (PaaS) relational database for new apps?",
+    "explanation": "Azure SQL Database is a fully managed PaaS relational database (SQL Server engine) where Azure handles patching, backups, and high availability.",
+    "options": [
+      {
+        "id": "a",
+        "text": "SQL Server on an Azure VM"
+      },
+      {
+        "id": "b",
+        "text": "Azure SQL Database"
+      },
+      {
+        "id": "c",
+        "text": "Azure Blob storage"
+      },
+      {
+        "id": "d",
+        "text": "Azure Cosmos DB"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "relational-and-nosql-databases-l13-q2",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "azure-sql-dtu-vs-vcore-purchasing-models",
+    "type": "multiple-choice",
+    "prompt": "Which statements about Azure SQL purchasing and options are true? Select all that apply.",
+    "explanation": "vCore sizes compute and storage separately; serverless can auto-pause; new servers block connections until a firewall rule is added. DTU is a bundled model, not separate sizing.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vCore lets you size compute and storage independently"
+      },
+      {
+        "id": "b",
+        "text": "The serverless tier can auto-pause when idle"
+      },
+      {
+        "id": "c",
+        "text": "A new SQL server blocks all connections until you add a firewall rule"
+      },
+      {
+        "id": "d",
+        "text": "DTU lets you choose cores and storage completely separately"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "relational-and-nosql-databases-l13-q3",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "azure-sql-serverless-and-auto-pause",
+    "type": "fill-blank",
+    "prompt": "The purchasing model Microsoft generally recommends, where you size compute and storage separately, is ____.",
+    "explanation": "vCore lets you choose compute (cores + memory) and storage independently, supports serverless and Azure Hybrid Benefit, and is generally recommended.",
+    "answer": [
+      "vCore",
+      "vcore"
+    ]
+  },
+  {
+    "id": "relational-and-nosql-databases-l13-q4",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "azure-sql-firewall-and-connectivity",
+    "type": "ordering",
+    "prompt": "Order the steps to create and connect to an Azure SQL database.",
+    "explanation": "Create the server, then the database, allow your client IP through the firewall, and finally connect and query.",
+    "items": [
+      {
+        "id": "server",
+        "text": "Create the logical SQL server"
+      },
+      {
+        "id": "db",
+        "text": "Create the database"
+      },
+      {
+        "id": "fw",
+        "text": "Add a firewall rule for your IP"
+      },
+      {
+        "id": "connect",
+        "text": "Connect and run queries"
+      }
+    ],
+    "answer": [
+      "server",
+      "db",
+      "fw",
+      "connect"
+    ]
+  },
+  {
+    "id": "relational-and-nosql-databases-l13-q5",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "azure-sql-automated-backups-and-recovery",
+    "type": "match-pair",
+    "prompt": "Match each option to its description.",
+    "explanation": "SQL Database is PaaS; Managed Instance is high-compatibility PaaS; SQL on a VM is IaaS; serverless auto-scales and pauses.",
+    "pairs": [
+      {
+        "left": "Azure SQL Database",
+        "right": "Fully managed PaaS database for new apps"
+      },
+      {
+        "left": "SQL Managed Instance",
+        "right": "Managed instance with near-full SQL Server compatibility"
+      },
+      {
+        "left": "SQL Server on a VM",
+        "right": "Self-managed database (IaaS)"
+      },
+      {
+        "left": "Serverless tier",
+        "right": "Auto-scales and auto-pauses compute"
+      }
+    ]
+  },
+  {
+    "id": "relational-and-nosql-databases-l14-q1",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "cosmos-db-architecture-and-multi-model-apis",
+    "type": "single-choice",
+    "prompt": "What are Request Units per second (RU/s) in Cosmos DB?",
+    "explanation": "RU/s is the currency for throughput and cost \u2014 a single unit bundles the CPU, memory, and I/O an operation uses. You provision RU/s or use serverless pay-per-request.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The number of regions your data is replicated to"
+      },
+      {
+        "id": "b",
+        "text": "The currency measuring the throughput/cost of operations"
+      },
+      {
+        "id": "c",
+        "text": "The maximum size of a single item"
+      },
+      {
+        "id": "d",
+        "text": "The number of consistency levels available"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "relational-and-nosql-databases-l14-q2",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "request-units-and-capacity-planning",
+    "type": "multiple-choice",
+    "prompt": "Which statements about Cosmos DB are true? Select all that apply.",
+    "explanation": "Good keys are high-cardinality and even; poor keys cause hot partitions; Session is the default. The partition key is a foundational choice that's hard to change later.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A good partition key has high cardinality and spreads load evenly"
+      },
+      {
+        "id": "b",
+        "text": "A poor partition key can create a hot partition that gets throttled"
+      },
+      {
+        "id": "c",
+        "text": "Session is the default consistency level"
+      },
+      {
+        "id": "d",
+        "text": "The partition key is trivial to change after the fact"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "relational-and-nosql-databases-l14-q3",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "cosmos-db-partition-key-selection",
+    "type": "fill-blank",
+    "prompt": "The default Cosmos DB consistency level, which guarantees you read your own writes within a client session, is ____.",
+    "explanation": "Session is the default \u2014 consistent within a client session (read your own writes) \u2014 offering much better latency and availability than Strong.",
+    "answer": [
+      "Session",
+      "session"
+    ]
+  },
+  {
+    "id": "relational-and-nosql-databases-l14-q4",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "cosmos-db-five-consistency-levels",
+    "type": "ordering",
+    "prompt": "Order the five consistency levels from STRONGEST to WEAKEST.",
+    "explanation": "The spectrum runs Strong, Bounded staleness, Session, Consistent prefix, Eventual \u2014 trading consistency for lower latency and higher availability.",
+    "items": [
+      {
+        "id": "strong",
+        "text": "Strong"
+      },
+      {
+        "id": "bounded",
+        "text": "Bounded staleness"
+      },
+      {
+        "id": "session",
+        "text": "Session"
+      },
+      {
+        "id": "prefix",
+        "text": "Consistent prefix"
+      },
+      {
+        "id": "eventual",
+        "text": "Eventual"
+      }
+    ],
+    "answer": [
+      "strong",
+      "bounded",
+      "session",
+      "prefix",
+      "eventual"
+    ]
+  },
+  {
+    "id": "relational-and-nosql-databases-l14-q5",
+    "topic": "relational-and-nosql-databases",
+    "lesson": "cosmos-db-global-distribution-and-multi-write",
+    "type": "match-pair",
+    "prompt": "Match each Cosmos DB concept to its meaning.",
+    "explanation": "NoSQL is the native API; the partition key distributes data; a hot partition is overloaded; RU/s measures throughput/cost.",
+    "pairs": [
+      {
+        "left": "API for NoSQL",
+        "right": "The native document API for new apps"
+      },
+      {
+        "left": "Partition key",
+        "right": "Property that distributes data across partitions"
+      },
+      {
+        "left": "Hot partition",
+        "right": "Overloaded partition from a poor key choice"
+      },
+      {
+        "left": "RU/s",
+        "right": "Throughput and cost currency"
+      }
+    ]
+  },
+  {
+    "id": "networking-and-connectivity-l15-q1",
+    "topic": "networking-and-connectivity",
+    "lesson": "creating-vnets-and-subnets-with-azure-cli",
+    "type": "single-choice",
+    "prompt": "What does a private endpoint do?",
+    "explanation": "A private endpoint is a network interface with a private IP in your VNet that connects privately (via Private Link) to a PaaS service, keeping traffic off the public internet.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gives a PaaS service a private IP inside your VNet so traffic avoids the public internet"
+      },
+      {
+        "id": "b",
+        "text": "Makes a storage account public to everyone"
+      },
+      {
+        "id": "c",
+        "text": "Encrypts a virtual machine's disk"
+      },
+      {
+        "id": "d",
+        "text": "Assigns a role to a user"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "networking-and-connectivity-l15-q2",
+    "topic": "networking-and-connectivity",
+    "lesson": "vnet-peering-hub-and-spoke-architecture",
+    "type": "multiple-choice",
+    "prompt": "Which statements about VNet peering are true? Select all that apply.",
+    "explanation": "Peering privately connects VNets, requires non-overlapping ranges, and is non-transitive. It must be created on both VNets to work.",
+    "options": [
+      {
+        "id": "a",
+        "text": "It connects two VNets so resources communicate over private IPs"
+      },
+      {
+        "id": "b",
+        "text": "Peered VNets must have non-overlapping address spaces"
+      },
+      {
+        "id": "c",
+        "text": "Peering is non-transitive (A-B and B-C does not connect A and C)"
+      },
+      {
+        "id": "d",
+        "text": "Peering only needs to be created on one of the two VNets"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "networking-and-connectivity-l15-q3",
+    "topic": "networking-and-connectivity",
+    "lesson": "private-endpoints-and-private-link",
+    "type": "fill-blank",
+    "prompt": "VNet peering is non-____, meaning peering A-B and B-C does not automatically connect A and C.",
+    "explanation": "Peering is non-transitive; you must connect A and C directly or use a hub-and-spoke design with routing.",
+    "answer": [
+      "transitive"
+    ]
+  },
+  {
+    "id": "networking-and-connectivity-l15-q4",
+    "topic": "networking-and-connectivity",
+    "lesson": "nsg-troubleshooting-and-effective-security-rules",
+    "type": "ordering",
+    "prompt": "Order the steps to build and secure a subnet.",
+    "explanation": "Create the VNet, carve a subnet, create an NSG with rules, then associate the NSG with the subnet.",
+    "items": [
+      {
+        "id": "vnet",
+        "text": "Create the VNet"
+      },
+      {
+        "id": "subnet",
+        "text": "Add a subnet"
+      },
+      {
+        "id": "nsg",
+        "text": "Create a network security group"
+      },
+      {
+        "id": "assoc",
+        "text": "Associate the NSG with the subnet"
+      }
+    ],
+    "answer": [
+      "vnet",
+      "subnet",
+      "nsg",
+      "assoc"
+    ]
+  },
+  {
+    "id": "networking-and-connectivity-l15-q5",
+    "topic": "networking-and-connectivity",
+    "lesson": "creating-vnets-and-subnets-with-azure-cli",
+    "type": "match-pair",
+    "prompt": "Match each networking concept to its meaning.",
+    "explanation": "Address space is the VNet's IP range; subnets subdivide it; peering connects VNets; private endpoints give PaaS a private IP.",
+    "pairs": [
+      {
+        "left": "Address space",
+        "right": "The private IP range a VNet owns"
+      },
+      {
+        "left": "Subnet",
+        "right": "A subdivision of a VNet grouping resources"
+      },
+      {
+        "left": "Peering",
+        "right": "Private connectivity between two VNets"
+      },
+      {
+        "left": "Private endpoint",
+        "right": "A private IP in your VNet for a PaaS service"
+      }
+    ]
+  },
+  {
+    "id": "identity-and-security-l16-q1",
+    "topic": "identity-and-security",
+    "lesson": "azure-key-vault-secrets-keys-certificates",
+    "type": "single-choice",
+    "prompt": "What is the main benefit of a managed identity?",
+    "explanation": "A managed identity is an Entra ID identity for an Azure resource that lets it authenticate to services like Key Vault without any stored credentials to leak.",
+    "options": [
+      {
+        "id": "a",
+        "text": "It lets an app authenticate to services without any stored credentials"
+      },
+      {
+        "id": "b",
+        "text": "It stores your application's source code"
+      },
+      {
+        "id": "c",
+        "text": "It is a faster type of virtual machine"
+      },
+      {
+        "id": "d",
+        "text": "It encrypts network traffic"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "identity-and-security-l16-q2",
+    "topic": "identity-and-security",
+    "lesson": "managed-identities-for-azure-resources",
+    "type": "multiple-choice",
+    "prompt": "Which statements are true about Key Vault and managed identities? Select all that apply.",
+    "explanation": "Key Vault holds secrets/keys/certs; system-assigned identities are tied to one resource, user-assigned are reusable; Key Vault references inject secrets at runtime. Non-secret settings belong in App Configuration.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Key Vault stores secrets, keys, and certificates"
+      },
+      {
+        "id": "b",
+        "text": "A system-assigned identity is tied to one resource; a user-assigned one is reusable"
+      },
+      {
+        "id": "c",
+        "text": "Key Vault references let App Service inject a secret into a setting at runtime"
+      },
+      {
+        "id": "d",
+        "text": "You should store non-secret settings and feature flags in Key Vault"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "identity-and-security-l16-q3",
+    "topic": "identity-and-security",
+    "lesson": "app-service-key-vault-references",
+    "type": "fill-blank",
+    "prompt": "An automatically managed Entra ID identity for a resource, so it needs no stored password, is called a managed ____.",
+    "explanation": "A managed identity lets a resource authenticate as itself (system-assigned or user-assigned) with no credentials stored in code or config.",
+    "answer": [
+      "identity"
+    ]
+  },
+  {
+    "id": "identity-and-security-l16-q4",
+    "topic": "identity-and-security",
+    "lesson": "azure-app-configuration-centralized-settings",
+    "type": "ordering",
+    "prompt": "Order the steps of the secure secret-access pattern.",
+    "explanation": "Store the secret, give the app an identity, grant that identity least-privilege access to the vault, and the app fetches the secret at runtime \u2014 no secret in code.",
+    "items": [
+      {
+        "id": "store",
+        "text": "Store the secret in Key Vault"
+      },
+      {
+        "id": "assign",
+        "text": "Give the app a managed identity"
+      },
+      {
+        "id": "grant",
+        "text": "Grant that identity access to the vault"
+      },
+      {
+        "id": "read",
+        "text": "The app reads the secret at runtime"
+      }
+    ],
+    "answer": [
+      "store",
+      "assign",
+      "grant",
+      "read"
+    ]
+  },
+  {
+    "id": "identity-and-security-l16-q5",
+    "topic": "identity-and-security",
+    "lesson": "avoiding-hardcoded-credentials",
+    "type": "match-pair",
+    "prompt": "Match each service or feature to its role.",
+    "explanation": "Key Vault stores secrets; managed identities remove stored credentials; App Configuration holds non-secret settings; Key Vault references inject secrets into settings.",
+    "pairs": [
+      {
+        "left": "Key Vault",
+        "right": "Secure store for secrets, keys, and certificates"
+      },
+      {
+        "left": "Managed identity",
+        "right": "Credential-free authentication for a resource"
+      },
+      {
+        "left": "App Configuration",
+        "right": "Centralized non-secret settings and feature flags"
+      },
+      {
+        "left": "Key Vault reference",
+        "right": "A setting that resolves to a vault secret at runtime"
+      }
+    ]
+  },
+  {
+    "id": "monitoring-and-observability-l17-q1",
+    "topic": "monitoring-and-observability",
+    "lesson": "azure-monitor-architecture-metrics-and-logs",
+    "type": "single-choice",
+    "prompt": "Which best describes metrics compared with logs in Azure Monitor?",
+    "explanation": "Metrics are lightweight, numeric, near-real-time time-series values (great for dashboards and quick alerts). Logs are richer, structured records stored in Log Analytics and queried with KQL.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Metrics are numeric, near-real-time time-series values"
+      },
+      {
+        "id": "b",
+        "text": "Metrics are long text records queried with KQL"
+      },
+      {
+        "id": "c",
+        "text": "Metrics can only be viewed once per day"
+      },
+      {
+        "id": "d",
+        "text": "Metrics are the same thing as alerts"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "monitoring-and-observability-l17-q2",
+    "topic": "monitoring-and-observability",
+    "lesson": "log-analytics-workspaces-and-data-ingestion",
+    "type": "multiple-choice",
+    "prompt": "Which statements about Azure Monitor are true? Select all that apply.",
+    "explanation": "App Insights is APM; logs live in Log Analytics (KQL); alerts trigger action groups. Over-alerting causes alert fatigue \u2014 alert only on actionable conditions.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Application Insights provides application performance monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Logs are stored in a Log Analytics workspace and queried with KQL"
+      },
+      {
+        "id": "c",
+        "text": "An alert rule can use an action group to notify or automate a response"
+      },
+      {
+        "id": "d",
+        "text": "Creating many noisy, low-value alerts is a best practice"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "monitoring-and-observability-l17-q3",
+    "topic": "monitoring-and-observability",
+    "lesson": "querying-logs-with-kusto-query-language-kql",
+    "type": "fill-blank",
+    "prompt": "The query language used to analyze logs in a Log Analytics workspace is abbreviated ____.",
+    "explanation": "KQL (Kusto Query Language) is a pipe-based language used to query logs, power log-based alerts, and build workbooks.",
+    "answer": [
+      "KQL",
+      "Kusto Query Language"
+    ]
+  },
+  {
+    "id": "monitoring-and-observability-l17-q4",
+    "topic": "monitoring-and-observability",
+    "lesson": "application-insights-apm-and-distributed-tracing",
+    "type": "ordering",
+    "prompt": "Order what happens when a monitored condition is breached.",
+    "explanation": "A signal breaches the condition, the alert rule fires, its action group runs, and it notifies people or automates a response.",
+    "items": [
+      {
+        "id": "signal",
+        "text": "A signal crosses the alert condition"
+      },
+      {
+        "id": "fire",
+        "text": "The alert rule fires"
+      },
+      {
+        "id": "action",
+        "text": "The action group runs"
+      },
+      {
+        "id": "respond",
+        "text": "People are notified or a response is automated"
+      }
+    ],
+    "answer": [
+      "signal",
+      "fire",
+      "action",
+      "respond"
+    ]
+  },
+  {
+    "id": "monitoring-and-observability-l17-q5",
+    "topic": "monitoring-and-observability",
+    "lesson": "azure-monitor-alerts-and-action-groups",
+    "type": "match-pair",
+    "prompt": "Match each monitoring concept to its meaning.",
+    "explanation": "Azure Monitor is the umbrella; metrics are numeric; Log Analytics stores logs (KQL); App Insights is APM.",
+    "pairs": [
+      {
+        "left": "Azure Monitor",
+        "right": "The umbrella platform for telemetry and alerting"
+      },
+      {
+        "left": "Metric",
+        "right": "A numeric, near-real-time time-series value"
+      },
+      {
+        "left": "Log Analytics",
+        "right": "Where logs are stored and queried with KQL"
+      },
+      {
+        "left": "Application Insights",
+        "right": "Application performance monitoring"
+      }
+    ]
+  },
+  {
+    "id": "containers-and-microservices-l18-q1",
+    "topic": "containers-and-microservices",
+    "lesson": "azure-container-options-decision-guide",
+    "type": "single-choice",
+    "prompt": "What is Azure Container Registry (ACR)?",
+    "explanation": "ACR is Azure's private container registry for storing images; it can also build images in the cloud with `az acr build`. Container services pull images from it.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A private registry for storing (and building) container images"
+      },
+      {
+        "id": "b",
+        "text": "A managed relational database"
+      },
+      {
+        "id": "c",
+        "text": "A load balancer for containers"
+      },
+      {
+        "id": "d",
+        "text": "A monitoring dashboard"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "containers-and-microservices-l18-q2",
+    "topic": "containers-and-microservices",
+    "lesson": "azure-container-registry-acr-basics",
+    "type": "multiple-choice",
+    "prompt": "Which statements about container services are true? Select all that apply.",
+    "explanation": "ACI runs single containers; Container Apps is serverless with scale-to-zero; AKS is managed Kubernetes. AKS has the MOST operational overhead, not the least.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ACI runs single containers serverlessly, billed per second"
+      },
+      {
+        "id": "b",
+        "text": "Container Apps is serverless and can scale to zero"
+      },
+      {
+        "id": "c",
+        "text": "AKS is managed Kubernetes for full orchestration control"
+      },
+      {
+        "id": "d",
+        "text": "AKS is the simplest option with the least operational overhead"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "containers-and-microservices-l18-q3",
+    "topic": "containers-and-microservices",
+    "lesson": "deploying-single-containers-with-aci",
+    "type": "fill-blank",
+    "prompt": "The serverless platform for containers and microservices that can scale to zero is Azure Container ____.",
+    "explanation": "Azure Container Apps is a serverless container platform (built on Kubernetes + KEDA) with autoscaling including scale-to-zero, ingress, and revisions.",
+    "answer": [
+      "Apps",
+      "apps"
+    ]
+  },
+  {
+    "id": "containers-and-microservices-l18-q4",
+    "topic": "containers-and-microservices",
+    "lesson": "azure-container-apps-serverless-containers",
+    "type": "ordering",
+    "prompt": "Order the steps to run a container on Azure.",
+    "explanation": "Build the image, push it to a registry like ACR, then deploy it to ACI, Container Apps, or AKS.",
+    "items": [
+      {
+        "id": "build",
+        "text": "Build the container image"
+      },
+      {
+        "id": "store",
+        "text": "Store it in a registry (ACR)"
+      },
+      {
+        "id": "run",
+        "text": "Deploy it to a container service"
+      }
+    ],
+    "answer": [
+      "build",
+      "store",
+      "run"
+    ]
+  },
+  {
+    "id": "containers-and-microservices-l18-q5",
+    "topic": "containers-and-microservices",
+    "lesson": "azure-kubernetes-service-aks-architecture",
+    "type": "match-pair",
+    "prompt": "Match each service to what it's best for.",
+    "explanation": "ACI = single containers; Container Apps = serverless microservices; AKS = full Kubernetes; ACR = image storage.",
+    "pairs": [
+      {
+        "left": "Container Instances",
+        "right": "A single container, run and go"
+      },
+      {
+        "left": "Container Apps",
+        "right": "Serverless microservices with autoscaling"
+      },
+      {
+        "left": "AKS",
+        "right": "Full Kubernetes control"
+      },
+      {
+        "left": "Container Registry",
+        "right": "Storing container images"
+      }
+    ]
+  },
+  {
+    "id": "iac-and-devops-l19-q1",
+    "topic": "iac-and-devops",
+    "lesson": "infrastructure-as-code-arm-vs-bicep",
+    "type": "single-choice",
+    "prompt": "How does Bicep relate to ARM templates?",
+    "explanation": "Bicep is a domain-specific language that transpiles to ARM JSON. Anything ARM can do, Bicep can express more readably; both deploy through Azure Resource Manager.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bicep is a concise language that transpiles to ARM JSON"
+      },
+      {
+        "id": "b",
+        "text": "Bicep replaces Azure Resource Manager entirely"
+      },
+      {
+        "id": "c",
+        "text": "Bicep is a monitoring tool"
+      },
+      {
+        "id": "d",
+        "text": "Bicep and ARM are unrelated products"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "iac-and-devops-l19-q2",
+    "topic": "iac-and-devops",
+    "lesson": "writing-bicep-declarative-templates",
+    "type": "multiple-choice",
+    "prompt": "Which statements about infrastructure as code are true? Select all that apply.",
+    "explanation": "IaC is repeatable and reviewable; Bicep is declarative and idempotent; parameters enable reuse. Manual portal edits cause drift \u2014 the files should be the source of truth.",
+    "options": [
+      {
+        "id": "a",
+        "text": "IaC makes environments repeatable and reviewable"
+      },
+      {
+        "id": "b",
+        "text": "Bicep deployments are declarative and idempotent"
+      },
+      {
+        "id": "c",
+        "text": "Parameters let one template serve multiple environments"
+      },
+      {
+        "id": "d",
+        "text": "Editing resources by hand in the portal is the recommended way to avoid drift"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "iac-and-devops-l19-q3",
+    "topic": "iac-and-devops",
+    "lesson": "bicep-parameters-variables-and-outputs",
+    "type": "fill-blank",
+    "prompt": "The command that previews exactly what a deployment would change, without changing anything, is `az deployment group ____`.",
+    "explanation": "`what-if` previews the create/change/delete actions a deployment would make, so you can review the impact before deploying.",
+    "answer": [
+      "what-if",
+      "whatif",
+      "what if"
+    ]
+  },
+  {
+    "id": "iac-and-devops-l19-q4",
+    "topic": "iac-and-devops",
+    "lesson": "deploying-bicep-with-azure-cli",
+    "type": "ordering",
+    "prompt": "Order the safe deployment workflow for Bicep.",
+    "explanation": "Author the Bicep, preview changes with what-if, then deploy \u2014 especially important for shared or production environments.",
+    "items": [
+      {
+        "id": "write",
+        "text": "Write the Bicep file"
+      },
+      {
+        "id": "whatif",
+        "text": "Run what-if to preview"
+      },
+      {
+        "id": "deploy",
+        "text": "Deploy the template"
+      }
+    ],
+    "answer": [
+      "write",
+      "whatif",
+      "deploy"
+    ]
+  },
+  {
+    "id": "iac-and-devops-l19-q5",
+    "topic": "iac-and-devops",
+    "lesson": "what-if-operation-and-idempotency",
+    "type": "match-pair",
+    "prompt": "Match each term to its meaning.",
+    "explanation": "IaC = infra in files; declarative = describe the end state; idempotent = no duplicates on redeploy; modules = reusable pieces.",
+    "pairs": [
+      {
+        "left": "Infrastructure as code",
+        "right": "Defining infrastructure in version-controlled files"
+      },
+      {
+        "left": "Declarative",
+        "right": "You describe the desired end state"
+      },
+      {
+        "left": "Idempotent",
+        "right": "Redeploying converges to the same state without duplicates"
+      },
+      {
+        "left": "Module",
+        "right": "A reusable Bicep file called with parameters"
+      }
+    ]
+  },
+  {
+    "id": "iac-and-devops-l20-q1",
+    "topic": "iac-and-devops",
+    "lesson": "cicd-fundamentals-github-actions-and-azure-pipelines",
+    "type": "single-choice",
+    "prompt": "Why is OIDC (workload identity federation) preferred over a service principal secret for pipeline authentication?",
+    "explanation": "OIDC lets the pipeline prove its identity with a short-lived token and no stored secret \u2014 so there's nothing to leak or rotate, unlike a stored client secret.",
+    "options": [
+      {
+        "id": "a",
+        "text": "It uses a short-lived token with no stored secret to leak or rotate"
+      },
+      {
+        "id": "b",
+        "text": "It makes deployments run faster"
+      },
+      {
+        "id": "c",
+        "text": "It removes the need for any permissions in Azure"
+      },
+      {
+        "id": "d",
+        "text": "It only works for private repositories"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "iac-and-devops-l20-q2",
+    "topic": "iac-and-devops",
+    "lesson": "oidc-workload-identity-federation",
+    "type": "multiple-choice",
+    "prompt": "Which statements about CI/CD are true? Select all that apply.",
+    "explanation": "CI builds/tests changes; Actions and Pipelines are YAML tools; environments support approvals. Prefer OIDC over storing long-lived secrets.",
+    "options": [
+      {
+        "id": "a",
+        "text": "CI automatically builds and tests every change"
+      },
+      {
+        "id": "b",
+        "text": "GitHub Actions and Azure Pipelines are both YAML-based CI/CD tools"
+      },
+      {
+        "id": "c",
+        "text": "Environments can require a manual approval before deploying to production"
+      },
+      {
+        "id": "d",
+        "text": "Storing long-lived secrets in the repo is the recommended auth method"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "iac-and-devops-l20-q3",
+    "topic": "iac-and-devops",
+    "lesson": "github-actions-azure-deployment-workflow",
+    "type": "fill-blank",
+    "prompt": "In CI/CD, 'CI' stands for continuous ____.",
+    "explanation": "CI is Continuous Integration \u2014 automatically building and testing every change so problems surface immediately.",
+    "answer": [
+      "integration"
+    ]
+  },
+  {
+    "id": "iac-and-devops-l20-q4",
+    "topic": "iac-and-devops",
+    "lesson": "deployment-environments-and-manual-approvals",
+    "type": "ordering",
+    "prompt": "Order the steps of a deploy pipeline that uses OIDC.",
+    "explanation": "A typical workflow checks out code, authenticates to Azure (OIDC), builds and tests, then deploys.",
+    "items": [
+      {
+        "id": "checkout",
+        "text": "Check out the code"
+      },
+      {
+        "id": "login",
+        "text": "Log in to Azure with OIDC"
+      },
+      {
+        "id": "build",
+        "text": "Build and test"
+      },
+      {
+        "id": "deploy",
+        "text": "Deploy to Azure"
+      }
+    ],
+    "answer": [
+      "checkout",
+      "login",
+      "build",
+      "deploy"
+    ]
+  },
+  {
+    "id": "iac-and-devops-l20-q5",
+    "topic": "iac-and-devops",
+    "lesson": "cicd-fundamentals-github-actions-and-azure-pipelines",
+    "type": "match-pair",
+    "prompt": "Match each term to its meaning.",
+    "explanation": "CI builds/tests; CD releases; GitHub Actions is a YAML CI/CD tool; OIDC is secretless auth.",
+    "pairs": [
+      {
+        "left": "Continuous Integration",
+        "right": "Auto build and test on every change"
+      },
+      {
+        "left": "Continuous Delivery",
+        "right": "Auto release to an environment (often gated)"
+      },
+      {
+        "left": "GitHub Actions",
+        "right": "YAML CI/CD workflows in a GitHub repo"
+      },
+      {
+        "left": "OIDC",
+        "right": "Secretless pipeline authentication to Azure"
+      }
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l21-q1",
+    "topic": "governance-reliability-architecture",
+    "lesson": "cloud-cost-estimation-and-pricing-calculator",
+    "type": "single-choice",
+    "prompt": "What does Azure Policy do?",
+    "explanation": "Azure Policy enforces organizational rules on how resources are configured \u2014 it can audit, deny non-compliant creates, or remediate. (RBAC governs who can act; Policy governs how resources are configured.)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enforces rules on resource configurations (audit, deny, or remediate)"
+      },
+      {
+        "id": "b",
+        "text": "Controls which users can sign in to Azure"
+      },
+      {
+        "id": "c",
+        "text": "Stores application secrets"
+      },
+      {
+        "id": "d",
+        "text": "Load-balances network traffic"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "governance-reliability-architecture-l21-q2",
+    "topic": "governance-reliability-architecture",
+    "lesson": "azure-cost-management-and-budget-alerts",
+    "type": "multiple-choice",
+    "prompt": "Which are legitimate ways to reduce Azure spend? Select all that apply.",
+    "explanation": "Right-sizing, reservations/savings plans, and Hybrid Benefit all cut cost. Azure Advisor's recommendations should be used, not ignored.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Right-size resources and shut down idle ones"
+      },
+      {
+        "id": "b",
+        "text": "Buy reservations or savings plans for steady workloads"
+      },
+      {
+        "id": "c",
+        "text": "Use Azure Hybrid Benefit to reuse existing licenses"
+      },
+      {
+        "id": "d",
+        "text": "Ignore Azure Advisor's cost recommendations"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l21-q3",
+    "topic": "governance-reliability-architecture",
+    "lesson": "azure-reservations-and-savings-plans",
+    "type": "fill-blank",
+    "prompt": "The resource lock type that lets you read and modify a resource but not delete it is ____.",
+    "explanation": "A CanNotDelete lock allows reading and modifying but prevents deletion \u2014 ideal for protecting critical resources like a production database.",
+    "answer": [
+      "CanNotDelete",
+      "cannotdelete",
+      "can not delete"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l21-q4",
+    "topic": "governance-reliability-architecture",
+    "lesson": "azure-policy-and-compliance-enforcement",
+    "type": "ordering",
+    "prompt": "Order a sensible cost-control workflow.",
+    "explanation": "Estimate up front, track real spend, set budgets, and receive alerts before you overspend.",
+    "items": [
+      {
+        "id": "estimate",
+        "text": "Estimate with the pricing calculator"
+      },
+      {
+        "id": "track",
+        "text": "Track actual spend in Cost Management"
+      },
+      {
+        "id": "budget",
+        "text": "Set a budget with a threshold"
+      },
+      {
+        "id": "alert",
+        "text": "Get alerted as you approach it"
+      }
+    ],
+    "answer": [
+      "estimate",
+      "track",
+      "budget",
+      "alert"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l21-q5",
+    "topic": "governance-reliability-architecture",
+    "lesson": "resource-locks-preventing-accidental-deletion",
+    "type": "match-pair",
+    "prompt": "Match each governance tool to its role.",
+    "explanation": "Policy enforces config rules; locks protect resources; budgets watch spend; management groups scale governance across subscriptions.",
+    "pairs": [
+      {
+        "left": "Azure Policy",
+        "right": "Enforces resource configuration rules"
+      },
+      {
+        "left": "Resource lock",
+        "right": "Prevents accidental change or deletion"
+      },
+      {
+        "left": "Budget",
+        "right": "A spending threshold with alerts"
+      },
+      {
+        "left": "Management group",
+        "right": "Applies policy/RBAC across many subscriptions"
+      }
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l22-q1",
+    "topic": "governance-reliability-architecture",
+    "lesson": "zero-trust-architecture-in-azure",
+    "type": "single-choice",
+    "prompt": "Which phrase best summarizes the Zero Trust model?",
+    "explanation": "Zero Trust means 'never trust, always verify': verify explicitly, use least-privilege access, and assume breach. Identity \u2014 not the network perimeter \u2014 is the primary control.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trust everything inside the network perimeter"
+      },
+      {
+        "id": "b",
+        "text": "Never trust, always verify"
+      },
+      {
+        "id": "c",
+        "text": "Security is only the provider's job"
+      },
+      {
+        "id": "d",
+        "text": "Disable authentication for speed"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "governance-reliability-architecture-l22-q2",
+    "topic": "governance-reliability-architecture",
+    "lesson": "microsoft-defender-for-cloud-and-secure-score",
+    "type": "multiple-choice",
+    "prompt": "Which statements about Azure security are true? Select all that apply.",
+    "explanation": "Defender for Cloud gives a secure score; Sentinel is SIEM/SOAR; encryption at rest is on by default for many services. Security is shared \u2014 configuration and access are the customer's job.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defender for Cloud provides a secure score and recommendations"
+      },
+      {
+        "id": "b",
+        "text": "Microsoft Sentinel is a cloud-native SIEM/SOAR"
+      },
+      {
+        "id": "c",
+        "text": "Data at rest is encrypted by default for many Azure services"
+      },
+      {
+        "id": "d",
+        "text": "In the cloud, security is entirely the provider's responsibility"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l22-q3",
+    "topic": "governance-reliability-architecture",
+    "lesson": "microsoft-sentinel-cloud-native-siem",
+    "type": "fill-blank",
+    "prompt": "Microsoft Defender for Cloud summarizes how well you follow best practices as a single percentage called the ____ score.",
+    "explanation": "The secure score is a single percentage summarizing your security posture, with prioritized recommendations to raise it.",
+    "answer": [
+      "secure"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l22-q4",
+    "topic": "governance-reliability-architecture",
+    "lesson": "azure-data-encryption-at-rest-and-in-transit",
+    "type": "ordering",
+    "prompt": "Order the steps to improve your secure score.",
+    "explanation": "Open the secure score, review recommendations, remediate the highest-impact ones first, and the score improves as you comply.",
+    "items": [
+      {
+        "id": "open",
+        "text": "Open Defender for Cloud's Secure Score"
+      },
+      {
+        "id": "review",
+        "text": "Review the prioritized recommendations"
+      },
+      {
+        "id": "fix",
+        "text": "Remediate the high-impact items"
+      },
+      {
+        "id": "rise",
+        "text": "Watch the score rise as you comply"
+      }
+    ],
+    "answer": [
+      "open",
+      "review",
+      "fix",
+      "rise"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l22-q5",
+    "topic": "governance-reliability-architecture",
+    "lesson": "zero-trust-architecture-in-azure",
+    "type": "match-pair",
+    "prompt": "Match each security concept to its meaning.",
+    "explanation": "Defender for Cloud manages posture; Sentinel is SIEM/SOAR; encryption at rest protects stored data; PIM grants admin access just-in-time.",
+    "pairs": [
+      {
+        "left": "Defender for Cloud",
+        "right": "Security posture management and workload protection"
+      },
+      {
+        "left": "Microsoft Sentinel",
+        "right": "Cloud-native SIEM and SOAR"
+      },
+      {
+        "left": "Encryption at rest",
+        "right": "Protecting stored data"
+      },
+      {
+        "left": "PIM",
+        "right": "Just-in-time elevation of admin roles"
+      }
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l23-q1",
+    "topic": "governance-reliability-architecture",
+    "lesson": "azure-slas-and-composite-availability",
+    "type": "single-choice",
+    "prompt": "How does the composite SLA of two services that depend on each other in series compare with each service alone?",
+    "explanation": "In series, SLAs multiply into a lower composite (e.g., 99.9% \u00d7 99.9% \u2248 99.8%). Parallel redundancy is what raises effective availability.",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is higher than either service"
+      },
+      {
+        "id": "b",
+        "text": "It is lower, because the SLAs multiply together"
+      },
+      {
+        "id": "c",
+        "text": "It is exactly the same as each service"
+      },
+      {
+        "id": "d",
+        "text": "SLAs cannot be combined at all"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": "governance-reliability-architecture-l23-q2",
+    "topic": "governance-reliability-architecture",
+    "lesson": "vertical-vs-horizontal-autoscale-rules",
+    "type": "multiple-choice",
+    "prompt": "Which statements about reliability and scaling are true? Select all that apply.",
+    "explanation": "Zones protect against datacenter outages; scaling out adds instances; autoscale reacts to metrics/schedules. Scaling up has a ceiling \u2014 scale out for elasticity and resilience.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Availability zones protect against a whole-datacenter outage"
+      },
+      {
+        "id": "b",
+        "text": "Scaling out adds more instances behind a load balancer"
+      },
+      {
+        "id": "c",
+        "text": "Autoscale can add/remove instances based on metrics or a schedule"
+      },
+      {
+        "id": "d",
+        "text": "Scaling up has no practical upper limit"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l23-q3",
+    "topic": "governance-reliability-architecture",
+    "lesson": "azure-backup-and-azure-site-recovery",
+    "type": "fill-blank",
+    "prompt": "The measure of how much data loss you can tolerate (how far back your last good copy is) is abbreviated ____.",
+    "explanation": "RPO (Recovery Point Objective) is tolerable data loss; RTO (Recovery Time Objective) is tolerable downtime. Design backup/DR to meet both.",
+    "answer": [
+      "RPO",
+      "recovery point objective"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l23-q4",
+    "topic": "governance-reliability-architecture",
+    "lesson": "recovery-objectives-rto-and-rpo",
+    "type": "ordering",
+    "prompt": "Order these from LEAST to MOST resilient.",
+    "explanation": "Resilience grows from a single instance, to an availability set (rack/maintenance protection), to zones (datacenter outage), to multiple regions (regional disaster).",
+    "items": [
+      {
+        "id": "single",
+        "text": "Single instance"
+      },
+      {
+        "id": "set",
+        "text": "Availability set (within a datacenter)"
+      },
+      {
+        "id": "zones",
+        "text": "Across availability zones"
+      },
+      {
+        "id": "region",
+        "text": "Across multiple regions"
+      }
+    ],
+    "answer": [
+      "single",
+      "set",
+      "zones",
+      "region"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l23-q5",
+    "topic": "governance-reliability-architecture",
+    "lesson": "azure-slas-and-composite-availability",
+    "type": "match-pair",
+    "prompt": "Match each reliability concept to its meaning.",
+    "explanation": "An SLA is the uptime commitment; availability sets protect within a datacenter; zones protect across datacenters; RTO is tolerable downtime.",
+    "pairs": [
+      {
+        "left": "SLA",
+        "right": "The provider's uptime commitment for a service"
+      },
+      {
+        "left": "Availability set",
+        "right": "VMs spread across fault/update domains in one datacenter"
+      },
+      {
+        "left": "Availability zone",
+        "right": "VMs spread across separate datacenters in a region"
+      },
+      {
+        "left": "RTO",
+        "right": "How quickly you must be back online"
+      }
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l24-q1",
+    "topic": "governance-reliability-architecture",
+    "lesson": "well-architected-framework-five-pillars",
+    "type": "single-choice",
+    "prompt": "What is the difference between the Well-Architected Framework (WAF) and the Cloud Adoption Framework (CAF)?",
+    "explanation": "WAF guides the design of a single workload (via the five pillars); CAF guides the organization's overall cloud journey \u2014 strategy, readiness (landing zones), governance, and management.",
+    "options": [
+      {
+        "id": "a",
+        "text": "WAF guides an individual workload's design; CAF guides the organization's whole cloud journey"
+      },
+      {
+        "id": "b",
+        "text": "They are two names for the same checklist"
+      },
+      {
+        "id": "c",
+        "text": "WAF is about billing; CAF is about networking"
+      },
+      {
+        "id": "d",
+        "text": "CAF replaces WAF entirely"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": "governance-reliability-architecture-l24-q2",
+    "topic": "governance-reliability-architecture",
+    "lesson": "cloud-adoption-framework-guidance",
+    "type": "multiple-choice",
+    "prompt": "Which of these are pillars of the Azure Well-Architected Framework? Select all that apply.",
+    "explanation": "The five pillars are Reliability, Security, Cost Optimization, Operational Excellence, and Performance Efficiency. 'Marketing Reach' is not one of them.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reliability"
+      },
+      {
+        "id": "b",
+        "text": "Security"
+      },
+      {
+        "id": "c",
+        "text": "Cost Optimization"
+      },
+      {
+        "id": "d",
+        "text": "Marketing Reach"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l24-q3",
+    "topic": "governance-reliability-architecture",
+    "lesson": "cloud-architecture-capstone-solution-design",
+    "type": "fill-blank",
+    "prompt": "The framework that guides an organization's entire cloud journey (strategy, readiness, governance, management) is the Cloud ____ Framework.",
+    "explanation": "The Cloud Adoption Framework (CAF) guides the whole organizational journey; the Well-Architected Framework guides each individual workload.",
+    "answer": [
+      "Adoption",
+      "adoption"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l24-q4",
+    "topic": "governance-reliability-architecture",
+    "lesson": "well-architected-framework-five-pillars",
+    "type": "ordering",
+    "prompt": "Order the steps of a good architecture process.",
+    "explanation": "Understand requirements, evaluate against the pillars, make and document deliberate trade-offs, and revisit as needs change.",
+    "items": [
+      {
+        "id": "reqs",
+        "text": "Identify the workload's requirements"
+      },
+      {
+        "id": "eval",
+        "text": "Evaluate the design against the five pillars"
+      },
+      {
+        "id": "tradeoff",
+        "text": "Make deliberate trade-offs"
+      },
+      {
+        "id": "revisit",
+        "text": "Document and revisit over time"
+      }
+    ],
+    "answer": [
+      "reqs",
+      "eval",
+      "tradeoff",
+      "revisit"
+    ]
+  },
+  {
+    "id": "governance-reliability-architecture-l24-q5",
+    "topic": "governance-reliability-architecture",
+    "lesson": "cloud-architecture-capstone-solution-design",
+    "type": "match-pair",
+    "prompt": "Match each Well-Architected pillar to its focus.",
+    "explanation": "Reliability = availability/recovery; Security = protection; Cost Optimization = value per dollar; Performance Efficiency = effective, scalable resource use.",
+    "pairs": [
+      {
+        "left": "Reliability",
+        "right": "Staying available and recovering from failure"
+      },
+      {
+        "left": "Security",
+        "right": "Protecting data and systems"
+      },
+      {
+        "left": "Cost Optimization",
+        "right": "Getting the most value per dollar"
+      },
+      {
+        "left": "Performance Efficiency",
+        "right": "Using resources effectively and scaling to demand"
+      }
+    ]
+  },
+  {
+    "id": "monitoring-and-observability-q06",
+    "topic": "monitoring-and-observability",
+    "lesson": "dashboards-and-workbooks-visualization",
+    "type": "single-choice",
+    "prompt": "What is the primary capability provided by Azure Workbooks?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deploying virtual machines with declarative ARM templates"
+      },
+      {
+        "id": "b",
+        "text": "Interactive visual reports combining rich text, KQL queries, metrics, and parameters"
+      },
+      {
+        "id": "c",
+        "text": "Managing database user logins and table indexes"
+      },
+      {
+        "id": "d",
+        "text": "Automatic failover of paired storage accounts"
+      }
+    ],
+    "answer": "b",
+    "explanation": "Azure Workbooks combine metrics, log queries (KQL), text, and parameters into customizable interactive observability and operational reports."
+  },
+  {
+    "id": "monitoring-and-observability-q07",
+    "topic": "monitoring-and-observability",
+    "lesson": "diagnostic-settings-configuration",
+    "type": "multiple-choice",
+    "prompt": "Which destinations can Diagnostic Settings stream resource logs and metrics to? (Select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Log Analytics workspace"
+      },
+      {
+        "id": "b",
+        "text": "Azure Storage Account for long-term archiving"
+      },
+      {
+        "id": "c",
+        "text": "Azure Event Hubs for real-time streaming to third-party SIEMs"
+      },
+      {
+        "id": "d",
+        "text": "On-premises tape drives directly"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Diagnostic settings route telemetry to Log Analytics (for querying), Storage accounts (for archive retention), Event Hubs (for external streaming), or partner solutions."
+  },
+  {
+    "id": "monitoring-and-observability-q08",
+    "topic": "monitoring-and-observability",
+    "lesson": "alert-fatigue-and-threshold-tuning",
+    "type": "fill-blank",
+    "prompt": "The operational problem caused by receiving too many false or non-actionable notifications is called alert ____.",
+    "answer": [
+      "fatigue"
+    ],
+    "explanation": "Alert fatigue occurs when operators become desensitized to frequent, low-priority notifications, potentially overlooking critical production outages."
+  },
+  {
+    "id": "monitoring-and-observability-q09",
+    "topic": "monitoring-and-observability",
+    "lesson": "querying-logs-with-kusto-query-language-kql",
+    "type": "ordering",
+    "prompt": "Order the steps of a typical KQL log query from initial source selection to visual aggregation.",
+    "items": [
+      {
+        "id": "table",
+        "text": "Select table (e.g. AppRequests)"
+      },
+      {
+        "id": "filter",
+        "text": "Filter records with where (e.g. where Success == false)"
+      },
+      {
+        "id": "summarize",
+        "text": "Aggregate counts with summarize count() by bin(TimeGenerated, 1h)"
+      },
+      {
+        "id": "render",
+        "text": "Visualize output with render timechart"
+      }
+    ],
+    "answer": [
+      "table",
+      "filter",
+      "summarize",
+      "render"
+    ],
+    "explanation": "KQL pipelines flow from table input -> filtering -> aggregation -> rendering."
+  },
+  {
+    "id": "monitoring-and-observability-q10",
+    "topic": "monitoring-and-observability",
+    "lesson": "application-insights-apm-and-distributed-tracing",
+    "type": "match-pair",
+    "prompt": "Match each Application Insights telemetry concept to its description.",
+    "pairs": [
+      {
+        "left": "Live Metrics",
+        "right": "Near real-time 1-second latency health and request stream"
+      },
+      {
+        "left": "Application Map",
+        "right": "Visual topology of app components and outbound dependencies"
+      },
+      {
+        "left": "Transaction Diagnostics",
+        "right": "End-to-end distributed trace for an individual user request"
+      },
+      {
+        "left": "Smart Detection",
+        "right": "Machine-learning proactive alerts for abnormal failure spikes"
+      }
+    ],
+    "explanation": "Live Metrics stream immediately; Application Map visualizes architecture; Transaction Diagnostics traces requests end-to-end; Smart Detection surfaces anomalies automatically."
+  },
+  {
+    "id": "containers-and-microservices-q06",
+    "topic": "containers-and-microservices",
+    "lesson": "container-apps-dapr-and-keda-integration",
+    "type": "single-choice",
+    "prompt": "In Azure Container Apps, what role does KEDA play?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compiling source code into Docker container images"
+      },
+      {
+        "id": "b",
+        "text": "Event-driven horizontal autoscaling based on queue depth, HTTP requests, or CPU/memory"
+      },
+      {
+        "id": "c",
+        "text": "Encrypting managed disks at rest with customer keys"
+      },
+      {
+        "id": "d",
+        "text": "Routing DNS queries across geographic regions"
+      }
+    ],
+    "answer": "b",
+    "explanation": "KEDA (Kubernetes Event-driven Autoscaling) provides rich scaling triggers based on events (like Service Bus queue depth or Kafka topics), including scaling down to zero instances."
+  },
+  {
+    "id": "containers-and-microservices-q07",
+    "topic": "containers-and-microservices",
+    "lesson": "aks-cluster-networking-and-ingress",
+    "type": "multiple-choice",
+    "prompt": "Which statements are true when comparing Kubenet vs Azure CNI networking in AKS? (Select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Kubenet conserves VNet IP address space by assigning pod IPs from a private internal overlay"
+      },
+      {
+        "id": "b",
+        "text": "Azure CNI assigns every pod an IP address directly from the subnet, enabling direct VNet communication"
+      },
+      {
+        "id": "c",
+        "text": "Azure CNI requires careful subnet IP sizing before cluster deployment"
+      },
+      {
+        "id": "d",
+        "text": "Kubenet requires all nodes to be run on bare-metal physical servers only"
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Kubenet uses internal NAT/masquerading to conserve VNet IPs, whereas Azure CNI allocates full VNet IPs directly to pods for native network performance."
+  },
+  {
+    "id": "containers-and-microservices-q08",
+    "topic": "containers-and-microservices",
+    "lesson": "container-security-and-acr-vulnerability-scanning",
+    "type": "fill-blank",
+    "prompt": "The automated security scanner in Microsoft Defender for Cloud that discovers image CVEs inside Azure Container Registry is called vulnerability ____.",
+    "answer": [
+      "scanning",
+      "assessment"
+    ],
+    "explanation": "ACR vulnerability scanning (integrated with Defender for Cloud) scans container images pushed to registries to detect known Common Vulnerabilities and Exposures (CVEs)."
+  },
+  {
+    "id": "containers-and-microservices-q09",
+    "topic": "containers-and-microservices",
+    "lesson": "azure-container-registry-acr-basics",
+    "type": "ordering",
+    "prompt": "Order the steps to build, push, and store an image in Azure Container Registry using the Azure CLI.",
+    "items": [
+      {
+        "id": "create",
+        "text": "Create an ACR registry with az acr create"
+      },
+      {
+        "id": "login",
+        "text": "Authenticate local Docker client using az acr login"
+      },
+      {
+        "id": "tag",
+        "text": "Tag the local image with the registry login server name"
+      },
+      {
+        "id": "push",
+        "text": "Push the image to the registry with docker push or az acr build"
+      }
+    ],
+    "answer": [
+      "create",
+      "login",
+      "tag",
+      "push"
+    ],
+    "explanation": "You first provision ACR, authenticate, tag the image with the ACR endpoint, and push the image."
+  },
+  {
+    "id": "containers-and-microservices-q10",
+    "topic": "containers-and-microservices",
+    "lesson": "azure-container-options-decision-guide",
+    "type": "match-pair",
+    "prompt": "Match each Azure container service to its primary architectural sweet spot.",
+    "pairs": [
+      {
+        "left": "Azure Container Instances (ACI)",
+        "right": "Fast, isolated single-container tasks and batch runs"
+      },
+      {
+        "left": "Azure Container Apps (ACA)",
+        "right": "Serverless microservices with built-in ingress and scale-to-zero"
+      },
+      {
+        "left": "Azure Kubernetes Service (AKS)",
+        "right": "Full orchestration control for complex distributed container workloads"
+      },
+      {
+        "left": "Azure Container Registry (ACR)",
+        "right": "Private storage and scanning for OCI container images"
+      }
+    ],
+    "explanation": "ACI is best for simple fast containers, ACA for serverless microservices, AKS for full Kubernetes orchestration, and ACR for storing images."
+  }
+]
